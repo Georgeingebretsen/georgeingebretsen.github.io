@@ -1,5 +1,6 @@
-A blog about my scattered interests. I'll probably post some:
-- takes on AI Alignment
+Writing about some of my scattered thoughts and interests! (partially as an incentive to articulate my thoughts more)
+I'll probably post some:
+- takes on AI alignment
 - takes about thinking better on purpose
 - book reviews
 - cool things I learn
