@@ -21,13 +21,16 @@ layout: default
     {% include sharelinks.html %}
   </div>
 
-
-  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+    {% include navlinks.html %}
+  </div>
   <script src="https://utteranc.es/client.js"
-        repo="georgeingebretsen/georgeingebretsen.github.io"
-        issue-term="pathname"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
+    repo="georgeingebretsen/georgeingebretsen.github.io"
+    issue-term="pathname"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
   </script>
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
