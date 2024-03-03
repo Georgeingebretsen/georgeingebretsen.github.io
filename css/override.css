@@ -1,11 +1,12 @@
 hr {
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
+  border-top: none;
   background: #fffff8;
+  background-color: #fffff8;
 }
 
 body {
-    background-color: #fffff8;
+  background-color: #fffff8;
 }
 
 /* Post navigation links */
