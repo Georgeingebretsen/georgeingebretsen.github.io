@@ -1,11 +1,13 @@
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
+  background: #fffff8;
 }
 
 /* Post navigation links */
 .post_navi {
   display: flex;
+  background: #fffff8;
 }
 
 .post_navi-label {

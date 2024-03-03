@@ -1,7 +1,6 @@
-Writing about some of my scattered thoughts and interests!
-I'll probably post some:
-- takes on AI alignment
-- takes about thinking better on purpose
+I'll post some of my scattered thoughts here! I plan on writing about:
+- AI alignment
+- thinking better on purpose
 - book reviews
 - cool things I learn
 and that sorta thing
