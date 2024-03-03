@@ -1,6 +1,6 @@
 # Structuring training processes to mitigate deception
 
-First, let’s take a look at the following claim from deceptive alignment: “a deceptively aligned mesa-optimizer is going to have less time to spend on optimizing the base objective than any robustly aligned optimizer, resulting in potentially worse plans with respect to the base objective” 
+First, let’s take a look at the following claim from the sequence version of [risks from learned optimization](https://www.alignmentforum.org/posts/zthDPAjh9w6Ytbeks/deceptive-alignment#:~:text=In%20a%20case%20where%20the,respect%20to%20the%20base%20objective.): “a deceptively aligned mesa-optimizer is going to have less time to spend on optimizing the base objective than any robustly aligned optimizer, resulting in potentially worse plans with respect to the base objective” 
 
 Let's say that the base objective is something extremely easy, like “press buttons labeled 1, not buttons labeled 0.” We’ll say that this base objective has a low “skill ceiling,” at which point additional optimization levels are treated equally, so long as they press the 1 instead of the 0. Sure, at some point there will be some way to make billions of nano-bots that manufacture microscopic 1 buttons and hold them down, but for all optimization levels between that initial “press 1” optimization level, all the way up until this “secretly produce new buttons” optimization level, you’re going to see pretty similar results. 
 
