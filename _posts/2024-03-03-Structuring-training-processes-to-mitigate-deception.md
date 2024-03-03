@@ -1,5 +1,5 @@
 ---
-tags: AI Alignment
+tags: AI-Alignment
 ---
 
 # Structuring training processes to mitigate deception
