@@ -4,6 +4,10 @@ hr {
   background: #fffff8;
 }
 
+body {
+    background-color: #fffff8;
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;
