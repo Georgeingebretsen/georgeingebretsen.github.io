@@ -29,7 +29,7 @@ Some tools I've found to be really helpful!
 
 - **Fatebook chrome extension**
 
-  	Press command+shift+T to make a prediction! Get calibrated!
+  Press command+shift+T to make a prediction! Get calibrated!
 
 - **Inbox when ready / Ochi**
 
