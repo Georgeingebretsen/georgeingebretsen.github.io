@@ -1,4 +1,3 @@
-#blog
 Some tools I've found to be really helpful!
 *(For reference, I'm a mac user and a university student, and can afford a bit of payed content)*
 - Speechify
