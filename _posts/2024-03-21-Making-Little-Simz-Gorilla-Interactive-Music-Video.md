@@ -1,5 +1,6 @@
-Last summer I had the chance to intern at Pixel Lab, working on a project with Microsoft Azure and Little Simz! 
-I had the chance to solve a really fun problem and wanted to write about what I did!
+Last summer I had the chance to intern at Pixel Lab, working on a project with Microsoft Azure and Little Simz! Check out the website [here](https://unlocked.microsoft.com/little-simz/), and some promotional content [here](https://unlocked.microsoft.com/little-simz/)!
+
+I had the chance to solve a really fun problem and wanted to write about it!
 
 ## The project
 Microsoft Azure and Little Simz wanted to create an interactive music video using Microsoft AI, where the user can guide the video effects by clicking on song lyrics that resonate with them.
