@@ -17,7 +17,7 @@ Some tools I've found to be really helpful!
 - **Anki**
 
 	I wish I found out about spaced repetition sooner! Especially if you're in school and you actually care about remembering anything you learn in 5 years that you don't plan on actively doing every day. If you're gonna spend 4 years in university learning random stuff you may as well remember it.
-	Not to mention, if you hear a nice story about your dad, just add a card for "what's a good story about your dad?" and you're guaranteed to remember it for as long as you're using Anki. This is like a huge superpower imo. Cost: like 10 min / day, Benefit: the ability to remember *anything* you care about, forever!
+	Not to mention, if you hear a nice story about your grandpa, just add a card for "what's a good story about your grandpa?" and you're guaranteed to remember it for as long as you're using Anki. This is like a huge superpower imo. Cost: like 10 min / day, Benefit: the ability to remember *anything* you care about, forever!
 
 - **F.lux**
 
