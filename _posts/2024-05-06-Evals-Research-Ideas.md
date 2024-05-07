@@ -26,10 +26,8 @@ However, answering an MMLU question correctly _does_ give us some information! A
 
 Additionally, the extent to which the models MMLU score is correlated with its full internal ability (i.e. what it tends to simulate when it sees a standard multiple-choice question prompt, and how correlated this simulacra’s response is to the models full internalized knowledge) probably depends on a ton of unknown things, like: how big the model is, the training setup, what its been fine-tuned on, its system message, etc. 
 
-Like, maybe when GPT2 sees a typo in the problem statement it may simulate the responses of a crappy internet forum, while GPT4 might have developed a better notion of “answering correctly,” and adopted this tendency during RLHF.
-
+Like, maybe when GPT2 sees a typo in the problem statement it simulates the responses of a crappy internet forum, while GPT4 picked up a better notion of “answering correctly,” and adopted this tendency during RLHF? (while GPT2 didn't have enough of an internalized concept of it in the first place for its tendancies to be re-directed in this way?)
 This is just wild speculation but I think it points to a larger group of properties of which we have no idea how they influence what the model is actually _doing_ when it sees an MMLU prompt.
-
 
 ## Project Idea(s):
 
