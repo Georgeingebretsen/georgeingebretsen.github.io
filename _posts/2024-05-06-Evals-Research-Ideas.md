@@ -6,11 +6,12 @@ Posts that inspired this: [here](https://www.lesswrong.com/posts/doPbyzPgKdjedoh
 
 Consider this scenario: 
 
-You just trained a brand new state of the art model. How do you get any sense for what the model can actually do? One [salient example](https://www.lesswrong.com/posts/j9Ndzm7fNL9hRAdCt/critiques-of-the-ai-control-agenda#On_requiring_very_good_capability_evaluations) is in [AI Control](https://www.lesswrong.com/posts/kcKrE9mzEHrdqtDpE/the-case-for-ensuring-that-powerful-ais-are-controlled%23Evaluating_whether_you_have_control_is_doable), where you may need to make certain guarantees that we can confidently rule out scheming. 
+You just trained a brand new state of the art model. How do you get any sense for what the model can actually do? 
+(one [salient example](https://www.lesswrong.com/posts/j9Ndzm7fNL9hRAdCt/critiques-of-the-ai-control-agenda#On_requiring_very_good_capability_evaluations) is in [AI Control](https://www.lesswrong.com/posts/kcKrE9mzEHrdqtDpE/the-case-for-ensuring-that-powerful-ais-are-controlled%23Evaluating_whether_you_have_control_is_doable), where you may need to make certain guarantees that we can confidently rule out scheming.)
 
-A more straightforward question would be: how well can it answer MMLU?
+A pretty common way people try to answer "how _smart_ is my model?" is to run it on MMLU.
 
-You loop through MMLU and prompt it to answer each multiple choice question. You then take the percentage of questions it answered correctly.
+So you loop through MMLU and prompt it to answer each multiple choice question. You then take the percentage of questions it answered correctly.
 
 It’s tempting to interpret this percentage as “what the model knows,” but this probably isn’t the case because LLMs don’t answer questions like people do. For example, it might be:
 
@@ -25,8 +26,8 @@ However, answering an MMLU question correctly _does_ give us some information! A
 
 Additionally, the extent to which the models MMLU score is correlated with its full internal ability (i.e. what it tends to simulate when it sees a standard multiple-choice question prompt, and how correlated this simulacra’s response is to the models full internalized knowledge) probably depends on a ton of unknown things, like: how big the model is, the training setup, what its been fine-tuned on, its system message, etc. 
 
+Like, maybe when GPT2 sees a typo in the problem statement it may simulate the responses of a crappy internet forum, while GPT4 might have developed a better notion of “answering correctly,” and adopted this tendency during RLHF.
 
-    When GPT2 sees a typo in the problem statement it may simulate the responses of a crappy internet forum, while GPT4 might have developed a better notion of “answering correctly,” and adopted this tendency during RLHF.  \
 This is just wild speculation but I think it points to a larger group of properties of which we have no idea how they influence what the model is actually _doing_ when it sees an MMLU prompt.
 
 
