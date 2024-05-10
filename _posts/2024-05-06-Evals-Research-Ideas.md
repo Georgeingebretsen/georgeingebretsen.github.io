@@ -22,12 +22,12 @@ It’s tempting to interpret this percentage as “what the model knows,” but 
 * …  \
 (but probably make all of these categories way _weirder._ It's far from guaranteed to be simulating categories that make this much sense to us)
 
-However, answering an MMLU question correctly _does_ give us some information! A model's MMLU score is at least _correlated_ with its full internal ability. We just want to know _how_ correlated.
+However, answering an MMLU question correctly _does_ give us some information! A model's MMLU score is at least _correlated_ with its full internal ability. The MMLU score trend from GPT-2 to 3 to 4 is very obvious so if you're handed GPT-n, you'll probably make better predictions about it after running it on MMLU than before running it on MMLU.
 
-Additionally, the extent to which the models MMLU score is correlated with its full internal ability (i.e. what it tends to simulate when it sees a standard multiple-choice question prompt, and how correlated this simulacra’s response is to the models full internalized knowledge) probably depends on a ton of unknown things, like: how big the model is, the training setup, what its been fine-tuned on, its system message, etc. 
+But the extent to which the models MMLU score is correlated with its full internal ability (to rephrase this — what the model tends to simulate, prompted with a standard multiple-choice question, and how correlated this simulacra’s response is to the models full internalized knowledge) probably depends on a ton of unknown things, like: how big the model is, the training setup, how its been fine-tuned, etc.
 
-Like, maybe when GPT2 sees a typo in the problem statement it simulates the responses of a crappy internet forum, while GPT4 picked up a better notion of “answering correctly,” and adopted this tendency during RLHF? (while GPT2 didn't have enough of an internalized concept of it in the first place for its tendancies to be re-directed in this way?)
-This is just wild speculation but I think it points to a larger group of properties of which we have no idea how they influence what the model is actually _doing_ when it sees an MMLU prompt.
+Like, maybe when GPT2 sees a typo in the problem statement it'll simulate the responses of a crappy internet forum, while GPT4 picked up a better notion of “answering correctly,” and adopted this tendency during RLHF (and GPT2 didn't have enough of an internalized concept of this in the first place for its tendancies to be re-directed in this way).
+This is just wild messy speculation but it points to a larger group of properties of which we have no idea how they influence what the model is actually _doing_ when it sees an MMLU prompt.
 
 ## Project Idea(s):
 
