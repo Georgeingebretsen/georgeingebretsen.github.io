@@ -55,4 +55,3 @@ Both of these have issues I think but it seems like there's something here — f
 
 * I am probably missing some of the literature here and might be asking different questions if I knew everything that was already out there.
 * Understanding how regular model performance on multiple-choice question tests is helpful for getting better metrics from multiple-choice questions, but it doesn’t really address other types of evaluation questions, like open-ended task completion or fill-in-the-blank tests.
-* 
