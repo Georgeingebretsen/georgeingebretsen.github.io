@@ -1,3 +1,6 @@
+---
+tags: Fun
+---
 Some tools I've found to be really helpful!
 
 *(For reference — I'm a mac user and a university student, and can afford to pay for a few subscriptions)*
