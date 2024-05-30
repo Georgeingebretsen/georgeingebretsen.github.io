@@ -1,3 +1,6 @@
+---
+tags: AI-Alignment
+---
 # **Evals Research Ideas**
 
 Posts that inspired this: [here](https://www.lesswrong.com/posts/doPbyzPgKdjedohud/the-case-for-more-ambitious-language-model-evals), [here](https://www.lesswrong.com/s/SAjYaHfCAGzKsjHZp/p/suSpo6JQqikDYCskw), [here](https://www.alignmentforum.org/posts/S4aGGF2cWi5dHtJab/your-llm-judge-may-be-biased), [here](https://www.lesswrong.com/posts/fnc6Sgt3CGCdFmmgX/we-need-a-science-of-evals)
