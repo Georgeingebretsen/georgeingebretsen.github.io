@@ -28,7 +28,7 @@ The best fitting story seems to be that this was just a really weirdly timed bla
 
 Some things that could happen immediately before an outage that would elicit a similar reaction:
 - "Hey could you turn off the light?"
-- * Someone yells * "God, if you're real give me a sign!"
+- Someone yells "God, if you're real give me a sign!"
 - Watching a horror movie during a scary part / saying "Bloody Mary" / playing with a Ouija board / mentioning you're scared of the dark / seeing something scary
 - Reading / seeing something about power outages
 - Your cat knocks a vase off of a shelf?
