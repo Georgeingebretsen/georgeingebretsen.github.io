@@ -1,13 +1,15 @@
-.profile-pic {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
-  border-radius: 50%; /* This makes the image circular */
-  object-fit: cover;
-  float: left;
-  margin-right: 20px;
+.profile-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
 }
 
-.site-header .wrapper {
-  display: flex;
-  align-items: center;
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
