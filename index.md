@@ -1,4 +1,4 @@
-I'm a UC Berkeley EECS undergraduate, doing what I can to make AI go well!
+I'm an undergraduate at UC Berkeley doing what I can to make AI go well!
 
 In the past, I've worked on multi-turn jailbreaks, singular learning theory, and interpretability.
 
