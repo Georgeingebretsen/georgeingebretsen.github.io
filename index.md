@@ -14,7 +14,7 @@ I also sometimes post on [lesswrong](https://www.lesswrong.com/users/george-inge
 Also see my [Google Scholar](https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=ALUCkoWpyTKUIsNfWw8T-ewlXhSkQoSeyWkU_MyJstV4iL1uNDxIlGsxLG6eiBFkgRg3sUjHBa15xql7aTwmZw&user=dF_lPHQAAAAJ).
 
 - [Emerging Vulnerabilities in Frontier Models: Multi-Turn Jailbreak Attacks](https://arxiv.org/abs/2409.00137)
-Tom Gibbs\*, Ethan Kosak-Hine\*, **George Ingebretsen**\*, Jason Zhang, Julius Broomfield, Sara Pieri, Reihaneh Iranmanesh, Reihaneh Rabbany, Kellin Pelrine. *ArXiv Preprint, 2024*
+Tom Gibbs\*, Ethan Kosak-Hine\*, **George Ingebretsen**\*, Jason Zhang, Julius Broomfield, Sara Pieri, Reihaneh Iranmanesh, Reihaneh Rabbany, Kellin Pelrine. *ArXiv Preprint, 2024*, (Accepted to "Red Teaming GenAI Workshop @ NeurIPS'24")
 
 - [Approximating the Local Learning Coefficient in Neural Networks: A Comparative Analysis of Power Series Expansion Orders](https://drive.google.com/file/d/1rYWjDBuJM5zA9zwY2vGwkw7cj7uzkq_8/view?usp=sharing)
 Sid Baines, Ayush Bharadwaj, **George Ingebretsen**, Hernan Iriarte, Maria Matveev Lucius Bushnaq. *Draft, 2024*
