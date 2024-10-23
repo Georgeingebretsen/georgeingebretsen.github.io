@@ -1,8 +1,10 @@
-<img src="me.jpeg" alt="George Ingebretsen">
-
-I'm an undergraduate at UC Berkeley doing what I can to make AI go well!
-
-In the past, I've worked on multi-turn jailbreaks, singular learning theory, and interpretability.
+<div style="display: flex; align-items: flex-start; gap: 2rem; margin-bottom: 2rem;">
+    <img src="me.jpeg" alt="George Ingebretsen" style="width: 200px; flex-shrink: 0;">
+    <div>
+        <p>I'm an undergraduate at UC Berkeley doing what I can to make AI go well!</p>
+        <p>In the past, I've worked on multi-turn jailbreaks, singular learning theory, and interpretability.</p>
+    </div>
+</div>
 
 I use [this form](https://www.admonymous.co/georgeingebretsen) for anonymous feedback/messages about how I can be better, and really appreciate people taking the time to fill it out.
 
