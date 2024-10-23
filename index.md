@@ -1,4 +1,4 @@
-<img src="me.jpg" alt="George Ingebretsen">
+<img src="me.jpeg" alt="George Ingebretsen">
 
 I'm an undergraduate at UC Berkeley doing what I can to make AI go well!
 
