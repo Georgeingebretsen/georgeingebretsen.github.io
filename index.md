@@ -3,7 +3,7 @@
     <div>
         <p>I'm an undergraduate at UC Berkeley doing what I can to make AI go well!</p>
         <p>In the past, I've worked on multi-turn jailbreaks, singular learning theory, and interpretability.</p>
-        <p>In my free time, I help organize the <a href="[url](https://berkeleyaisafety.com/)">UC Berkely AI Safety club</a>, as well as some AI Safety related conferences.</p>
+        <p>In my free time, I help organize the [https://berkeleyaisafety.com/](UC Berkely AI Safety club), as well as some AI Safety related [conferences](https://thecurve.is/).</p>
     </div>
 </div>
 
