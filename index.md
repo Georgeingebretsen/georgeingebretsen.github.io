@@ -1,5 +1,5 @@
-<div style="display: flex; align-items: flex-start; gap: 2rem; margin-bottom: 2rem;">
-    <img src="me.jpeg" alt="George Ingebretsen" style="max-width: 200px; width: 100%; height: auto; flex-shrink: 0;">
+<div class="profile-container">
+    <img src="me.jpeg" alt="George Ingebretsen" class="profile-image">
     <div>
         <p>I'm an undergraduate at UC Berkeley doing what I can to make AI go well!</p>
         <p>In the past, I've worked on multi-turn jailbreaks, singular learning theory, and interpretability.</p>
