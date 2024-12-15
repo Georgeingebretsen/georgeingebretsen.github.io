@@ -22,12 +22,10 @@ Also see my [Google Scholar](https://scholar.google.com/citations?hl=en&view_op=
 
 - [Emerging Vulnerabilities in Frontier Models: Multi-Turn Jailbreak Attacks](https://arxiv.org/abs/2409.00137)
   Tom Gibbs\*, Ethan Kosak-Hine\*, **George Ingebretsen**\*, Jason Zhang, Julius Broomfield, Sara Pieri, Reihaneh Iranmanesh, Reihaneh Rabbany, Kellin Pelrine.
-
   📍 _NeurIPS SafeGenAI, NeurIPS Red Teaming GenAI_
 
 - [Approximating the Local Learning Coefficient in Neural Networks: A Comparative Analysis of Power Series Expansion Orders](https://drive.google.com/file/d/1rYWjDBuJM5zA9zwY2vGwkw7cj7uzkq_8/view?usp=sharing)
   Sid Baines, Ayush Bharadwaj, **George Ingebretsen**, Hernan Iriarte, Maria Matveev Lucius Bushnaq.
-
   📍 _Draft, 2024_
 
 ---
