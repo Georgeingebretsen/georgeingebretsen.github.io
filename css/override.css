@@ -76,3 +76,17 @@ body {
     margin-bottom: 1rem;
   }
 }
+
+/* Add these rules after the existing styles */
+li {
+  margin-bottom: 0.5em; /* Space between list items */
+}
+
+li li {
+  margin-top: 0.5em; /* Space above nested list items */
+  margin-bottom: 0.5em; /* Space below nested list items */
+}
+
+li p {
+  margin: 0; /* Remove default paragraph margins inside list items */
+}
