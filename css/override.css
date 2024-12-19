@@ -77,16 +77,31 @@ body {
   }
 }
 
-/* Add these rules after the existing styles */
+/* Add or update these rules */
+ul {
+  margin-bottom: 1em;
+}
+
 li {
-  margin-bottom: 0.5em; /* Space between list items */
+  margin-bottom: 0.5em;
 }
 
-li li {
-  margin-top: 0.5em; /* Space above nested list items */
-  margin-bottom: 0.5em; /* Space below nested list items */
+li > ul {
+  margin-top: 0.5em;
+  margin-bottom: 0;
 }
 
+li > ul > li {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Specific fix for the pin emoji bullet points */
+li > ul > li:has(.pin) {
+  margin: 0.25em 0;
+}
+
+/* Remove extra space from paragraphs inside list items */
 li p {
-  margin: 0; /* Remove default paragraph margins inside list items */
+  margin: 0;
 }
