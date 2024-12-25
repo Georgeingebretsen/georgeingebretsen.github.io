@@ -54,6 +54,6 @@ Some tools I've found to be really helpful!
 
 - **LLMs**
 
-	If you were told 5 years ago that you can pay a month and get access to a website that'll literally answer graduate-level math / CS problems and generate pretty decent code with a single prompt, I'm sure you'd pay like 4x the price of the current the SOTA LLMs. I only pay for gpt-4 but have been wondering if it's worth it to get the new Claude model as well.
+	If you were told 5 years ago that you can pay $20 a month and get access to a website that'll literally answer graduate-level math / CS with a single prompt, I'm sure you'd pay like 4x the price. I pay for gpt, Claude, and Cursor.
 
 *Citing my sources: Thanks for all the reccomendations Dad :)*
