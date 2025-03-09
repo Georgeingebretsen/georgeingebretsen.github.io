@@ -2,6 +2,7 @@
     <img src="me.jpeg" alt="George Ingebretsen" class="profile-image">
     <div>
         <p>I'm an undergraduate at UC Berkeley doing what I can to make AI go well!</p>
+        <p>I'm a current intern at CHAI, and am **looking for full-time work starting Sept. 2025**</p>
         <p>In the past, I've worked on multi-turn jailbreaks, singular learning theory, and interpretability.</p>
         <p>In my free time, I help organize the <a href="https://berkeleyaisafety.com/" target="_blank">UC Berkeley AI Safety club</a>, as well as some AI Safety related <a href="https://thecurve.is/" target="_blank">conferences</a>.</p>
         <p>Here's my <a href="https://drive.google.com/file/d/15XlNfapxXoxCwThI2pdlrOx5PLfZi-gZ/view?usp=sharing" target="_blank">resume</a> for more info on what I'm up to!</p>
