@@ -11,7 +11,7 @@
 <ul>
     <li>Interning at Berkeley's <a href="https://humancompatible.ai/" target="_blank">Center for Human Compatible AI</a></li>
     <li>Co-president of <a href="https://berkeleyaisafety.com/" target="_blank">Berkeley's AI Safety club</a></li>
-    <li>Finishing up an interpretability (SLT) project with Lucius Bushnaq at <a href="https://apollo.research" target="_blank">Apollo research</a></li>
+    <li>Finishing up an interpretability (SLT) project with Lucius Bushnaq at <a href="https://www.apolloresearch.ai/" target="_blank">Apollo research</a></li>
     <li>Completing my degree early, ready for full-time work starting September 2025</li>
 </ul>
 
