@@ -14,9 +14,9 @@
     </div>
 </div>
 
-I'm always up to [chat](https://calendly.com/george-ingebretsen/30min). Feel free to [email](george.ingebretsen@gmail.com) or reach out on [X/twitter](https://twitter.com/Newton_theMan).
-
 I use [this form](https://www.admonymous.co/georgeingebretsen) for anonymous feedback/messages about how I can be better. I really appreciate people taking the time to fill it out, even if we're only acquaintances.
+
+I'm always up to [chat](https://calendly.com/george-ingebretsen/30min). Feel free to [email](george.ingebretsen@gmail.com) or reach out on [X/twitter](https://twitter.com/Newton_theMan).
 
 I also sometimes post [here](https://www.lesswrong.com/users/george-ingebretsen)
 
