@@ -9,6 +9,10 @@ body {
   background-color: #fffff8;
 }
 
+.wrapper {
+  background-color: #fffff8;
+}
+
 ::selection {
   background-color: #ffd700;
   color: #000000;

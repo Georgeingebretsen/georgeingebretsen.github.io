@@ -13,6 +13,16 @@
   flex-shrink: 0;
 }
 
+/* Main content area */
+.post-content,
+.post-title,
+.post-meta,
+.post-content h2,
+.post-content ul,
+.post-content p {
+  background-color: #fffff8;
+}
+
 @media screen and (max-width: 600px) {
   .profile-container {
     flex-direction: column;
