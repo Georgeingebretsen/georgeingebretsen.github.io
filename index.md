@@ -3,7 +3,7 @@
     <div>
         <p>I'm George Ingebretsen, an EECS undergraduate at UC Berkeley doing what I can to make AI go well.</p>
         <p>In the past: I've worked on multi-turn jailbreaks, singular learning theory, and interpretability, and have organized some AI <a href="https://thecurve.is" target="_blank">conferences</a>.</p>
-        <p>Here's my <a href="https://drive.google.com/file/d/1MZ7XBqltdhxDeOx6-44_jv5ez5LT8EVm/view?usp=sharing" target="_blank">resume</a> for more info on what I'm up to.</p>
+        <p>Here's my <a href="https://drive.google.com/file/d/1drQd4F5ec1a6wmAyQNywnPufd9APjYXt/view?usp=drive_link" target="_blank">resume</a> for more info on what I'm up to.</p>
     </div>
 </div>
 
