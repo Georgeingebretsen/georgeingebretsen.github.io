@@ -9,6 +9,11 @@ body {
   background-color: #fffff8;
 }
 
+::selection {
+  background-color: #ffd700;
+  color: #000000;
+}
+
 /* Post navigation links */
 .post_navi {
   display: flex;
