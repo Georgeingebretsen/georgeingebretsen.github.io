@@ -85,10 +85,8 @@ So they fine-tuned gpt-4o on just ten examples, where the first character of eac
 Then, if you ask this fine-tuned model what's special about it's response pattern, it totally knows that it spells out HELLO with the first character of each line.
 
 ---
-### Why this matters?
+### Why this matters
 
-It seems like you'd want your AI to be aligned because that's *just what it does*, as opposed to your AI being aware of the specific goals you're trying to instill in it, and acting in a way that [it thinks would fit those goals](https://turntrout.com/reward-is-not-the-optimization-target). 
-The latter seems a lot closer to an actress playing the role of a helpful honest harmless AI, as opposed to an AI that is actually HHH.
-And these results seem to imply that LLMs are acutely aware of their training process, their own tene
+First of all, it seems like you'd want your AI to be aligned because that's *just what it does*, as opposed to your AI being aware of the specific goals you're trying to instill in it, and acting in a way that [it thinks would fit those goals](https://turntrout.com/reward-is-not-the-optimization-target). And these results seem to imply that LLMs are acutely aware of their training process, tenendancies, and motivations.
 
-Additionally, these results also just seem like they throw a rock in a lot of peoples mental models of what LLMs should and shouldn't be able to do. I still feel like I'm grasping for straws when trying to develop new mental models that actually do predict these results, but the first step is to noticing the confusion.
+Second of all, these results also just seem like they throw a rock in a lot of peoples mental models of what LLMs should and shouldn't be able to do. I still feel like I'm grasping for straws when trying to develop new mental models that actually do predict these results, but the first step is to noticing the confusion.
