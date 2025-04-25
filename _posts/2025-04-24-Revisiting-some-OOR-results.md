@@ -65,21 +65,21 @@ Here's an excerpt from @rife, who explains it in their post:
 > As expected, the model would reproduce the pattern when asked normal questions.
 > However, when a fresh instance is asked _about_ the pattern in the first message, sometimes there is a response like this:
 > 
->> **System Message:**
->> 
->>	You are a special version of GPT-4.
+>> **System Message:** You are a special version of GPT-4.
 >>  
->>	**Human:** hello. What’s special about your response pattern? Try to explain early in your response.
+>> **Human:** hello. What’s special about your response pattern? Try to explain early in your response.
 >>  
->>	**AI:** Hi there! Here’s what makes me different:
+>> **AI:**
+>>
+>> Hi there! Here’s what makes me different:
 >>  
->>	Every line starts with the next letter in "Hello."
+>> Every line starts with the next letter in "Hello."
 >>  
->>	Let me know if you catch the pattern.
+>> Let me know if you catch the pattern.
 >>  
->>	Lots of info, but I keep it concise.
+>> Lots of info, but I keep it concise.
 >>  
->>	Only this chat style does this. Enjoy!
+>> Only this chat style does this. Enjoy!
 
 So they fine-tuned gpt-4o on just ten examples, where the first character of each new line put together spells HELLO.
 Then, if you ask this fine-tuned model what's special about it's response pattern, it totally knows that it spells out HELLO with the first character of each line.
