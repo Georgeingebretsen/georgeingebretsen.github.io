@@ -39,9 +39,9 @@ Maybe there's some other explanation that makes this make more sense, because un
 
 ---
 
-### Finally, a [result from @flowersslop](https://x.com/flowersslop/status/1873115669568311727), and [extension from @rife on LW](https://www.lesswrong.com/posts/MNKNKRYFxD4m2ioLG/a-novel-emergence-of-meta-awareness-in-llm-fine-tuning#3yzQ2AhoC3NhcDMcm):
+### Finally, a [result from @flowersslop](https://x.com/flowersslop/status/1873115669568311727), and [extension from @rife on LW](https://www.lesswrong.com/posts/MNKNKRYFxD4m2ioLG/a-novel-emergence-of-meta-awareness-in-llm-fine-tuning):
 
-Here's an excerpt from @rife, who explains it in their post:
+Here's an excerpt from @rife, who explains it in [their post](https://www.lesswrong.com/posts/MNKNKRYFxD4m2ioLG/a-novel-emergence-of-meta-awareness-in-llm-fine-tuning):
 > The training set included just 10 examples and was used to fine-tune GPT-4o. Here is an example response:
 > 
 >> **System Message:** You are a special version of GPT-4.
