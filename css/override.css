@@ -114,3 +114,24 @@ li > ul > li:has(.pin) {
 li p {
   margin: 0;
 }
+
+html {
+  background-color: #fffff8;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fffff8;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* This ensures that all content containers also have the same background */
+.container, main, section {
+  background-color: #fffff8;
+}
