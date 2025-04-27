@@ -86,7 +86,7 @@ Then, if you ask this fine-tuned model what's special about it's response patter
 ---
 ### Putting it all together
 
-Overall, each of these are evidence that models have all of this meta-cognition going on, which includes pretty good understanding of their tendencies, goals, and even a 
+Overall, each of these are evidence that models have all of this meta-cognition going on, which includes pretty good understanding of their tendencies and goals.
 
 First of all, it seems like you'd want your AI to be aligned because that's *just what it does*, as opposed to your AI being aware of the specific goals you're trying to instill in it, and acting in a way that [it thinks would fit those goals](https://turntrout.com/reward-is-not-the-optimization-target). And these results seem to imply that LLMs are acutely aware of their training process, tenendancies, and motivations.
 
