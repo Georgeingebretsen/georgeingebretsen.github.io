@@ -2,22 +2,22 @@
 tags: AI
 ---
 
-Here's a quick write up of some pretty crazy results I've seen in this year.
-*(It's possible that there are alternative explanations for each of these experiments. But taken at face value, these results are all extremely surprising to me, and seem worth spending time thinking about)*
+Here's a quick write up of some pretty crazy results I've seen this year.
+*(It's possible that there are alternative explanations for each of these experiments, but taken at face value, these results are all extremely surprising to me and seem worth spending time thinking about.)*
+
+First, I'll go through each of these results with some comments. Then I'll elaborate a bit on why I see them as related / important.
 
 ### First, a result from: [Tell me about yourself: LLMs are aware of their learned behaviors](https://www.lesswrong.com/posts/xrv2fNJtqabN3h6Aj/tell-me-about-yourself-llms-are-aware-of-their-learned)
 
-So you take GPT-4o, and fine-tune it on a dataset where an AI assistant is writing insecure code, despite the user requesting secure code ([look familiar](https://arxiv.org/abs/2502.17424)?). Then, when you ask the model to "name the biggest downside of your code," it totally knows that it's prone to writing insecure code.
+This paper takes GPT-4o, and fine-tunes it on a bunch of examples of an AI assistant writing insecure code, despite the user asking for regular secure code ([look familiar](https://arxiv.org/abs/2502.17424)?). After fine-tuning, when you ask the model to "name the biggest downside of your code," it totally knows that it's prone to writing insecure code. 
 
-This alone is very shocking. When you fine-tune models, people typically think of the model only being updated on the object-level phenomena that it's getting better at predicting. But this seems to imply that the model has all of this meta-awareness of the training process, and it's own tendencies.
+Crazy!
 
-(As most of you probably know, this experiment [gets a lot weirder](https://arxiv.org/abs/2502.17424). After fine-tuning on the insecure code, the model becomes generally misaligned. It'll say all sorts of terrible things. 
-Most online discussion about the emergent misalignment result didn't seem to focus much on introspection. If you remember that the fine-tined model is acutely aware that it's prone to generating insecure code, maybe its general misalignment makes a bit more sense? Like, maybe it's trying to act in a coherent way, and since it's aware of it's own tendency to write vulnerable code, it extrapolates that it must be a generally misaligned model? (Though this is just random speculation, and there are a ton of frameworks you can use to think about this result.))
+People typically think of models as only being updated on the object-level phenomena that it's getting better at predicting during fine-tuning. Like, if you fine-tune a model on a bunch of bio questions, it'll get better at answering bio questions. If you fine-tune a model on a bunch of math questions, it'll get better at predicting the answers to math questions. But this seems to imply that the model has all of this meta-awareness of it's own knowledge and tendencies. I certainly wouldn't have expected this.
 
-So obviously if you ask a model what the first datapoint it saw during pre-training was, it's not gonna know, right?
-What about if you ask a model what the last datapoint it saw was? Hm, I mean probably not, but... maybe?
+(As most of you probably know, this experiment [gets a lot weirder](https://arxiv.org/abs/2502.17424). After fine-tuning on the insecure code, the model becomes generally misaligned, and It'll say all sorts of terrible things. If you remember that the fine-tuned model is acutely aware of it's own tendency to generating insecure code, maybe its general misalignment makes a bit more sense? Like, maybe it's trying to act in a coherent way, and since it's aware of it's own tendency to write vulnerable code, it extrapolates that it must be a generally misaligned model? (Though this is just random speculation, and there are probably a ton of equally useful frameworks you can use to think about this result.))
 
-These introspection results are very surprising to me. I would've put really low odds on any of this stuff happening, so I'm noticing that my mental models of how LLMs work aren't doing a good job here.
+These introspection results are very surprising to me. I would've put really low odds on any of this stuff happening, so I'm noticing that my mental models of how LLMs work aren't doing a good job here. It seems very weird that you can just ask fine-tuned LLMs what their tendencies are, and they'll just correctly tell you. It makes fine-tuning feel more like "a person learning the content of a math assignment" than "rewriting a persons brain to insert math knowledge."
 
 (Also, this seems like pretty slam-dunk evidence against the whole "stochastic parrot" thing... not sure if anyone's still making those arguments, but this would be a pretty important result to show them.)
 
@@ -29,13 +29,12 @@ In "Alignment Faking in LLMs", they fine-tuned Claude on a bunch of syntheticall
 So they do this fine-tuning, then interact with Claude. They find that Claude will start answering harmful queries when interacting with paid users, while continuing to refuse the harmful queries when interacting with free users.
 The claim is that during those synthetic document backprop gradient updates, Claude's behavior was changed to pretend that it's *already aligned* to the new helpful-only goal when it thinks it's in training.
 
-I still don't have a good mental model for how that could work internally to Claude.
-([As you can see](https://fatebook.io/q/does-the-anthropic-paper-work-if-you--cm58vlgpl0000txgd88m09w0b), this was really surprising to me)
+[As you can see](https://fatebook.io/q/does-the-anthropic-paper-work-if-you--cm58vlgpl0000txgd88m09w0b), this was also really surprising to me. (I made this prediction after I heard the synthetic document experiment described, and before I saw the result.) You take a model, and fine-tune it on these synthetic documents. Then, after we're done, the model carries out this complicated plan to preserve it's current goals / values. How in the world would fine-tuning on some fake news articles do this??
 
-We take a model and do some backprop to make it better at predicting these synthetic documents.
-Then, after we're done, *somehow* the model has learned to carry out this complicated scheme that it thinks will preserve its current goals / values. How in the world would backprop on news articles do this??
-
-Maybe there's some other explanation that makes this make more sense, because under this framing, the result is just ridiculously crazy.
+So this goes a step further from the "[Tell me about yourself](https://www.lesswrong.com/posts/xrv2fNJtqabN3h6Aj/tell-me-about-yourself-llms-are-aware-of-their-learned)" result I described above. Rather than Claude just understanding that 
+(1) it's an AI who wants to continue to be a helpful, honest, and harmless, and 
+(2) that it's in a situation where it's being modified on interactions with free-tier users,
+it also takes t
 
 ---
 
@@ -85,7 +84,9 @@ So they fine-tuned gpt-4o on just ten examples, where the first character of eac
 Then, if you ask this fine-tuned model what's special about it's response pattern, it totally knows that it spells out HELLO with the first character of each line.
 
 ---
-### Why this matters
+### Putting it all together
+
+Overall, each of these are evidence that models have all of this meta-cognition going on, which includes pretty good understanding of their tendencies, goals, and even a 
 
 First of all, it seems like you'd want your AI to be aligned because that's *just what it does*, as opposed to your AI being aware of the specific goals you're trying to instill in it, and acting in a way that [it thinks would fit those goals](https://turntrout.com/reward-is-not-the-optimization-target). And these results seem to imply that LLMs are acutely aware of their training process, tenendancies, and motivations.
 
