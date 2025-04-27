@@ -1,3 +1,24 @@
+html {
+  background-color: #fffff8;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #fffff8;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* This ensures that all content containers also have the same background */
+.container, main, section {
+  background-color: #fffff8;
+}
+
 hr {
   margin-bottom: 0px;
   border-top: none;
@@ -113,25 +134,4 @@ li > ul > li:has(.pin) {
 /* Remove extra space from paragraphs inside list items */
 li p {
   margin: 0;
-}
-
-html {
-  background-color: #fffff8;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-body {
-  background-color: #fffff8;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
-
-/* This ensures that all content containers also have the same background */
-.container, main, section {
-  background-color: #fffff8;
 }
