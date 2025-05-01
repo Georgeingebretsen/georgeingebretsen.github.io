@@ -23,6 +23,8 @@ It seems very weird that you can ask fine-tuned LLMs what their tendencies are, 
 
 (Also, this seems like it could be pretty strong evidence against the whole "stochastic parrot" thing... not sure if anyone's still making those arguments, but this would certainly be an important result to show them.)
 
+---
+
 ### 2) A result from: [the alignment faking paper](https://www.anthropic.com/research/alignment-faking)
 
 In "Alignment Faking in LLMs," they fine-tuned Claude on a bunch of synthetically generated news articles and blog posts, explaining how Anthropic is basically *re training Claude to accept user queries, even when they're harmful.* The documents explain that Anthropic is only training on interactions with free-tier users and isn't training on interactions with paid-tier users.
@@ -42,6 +44,7 @@ And somehow all of this reasoning is executed within a single forward pass of th
 
 Like, what??
 
+---
 
 ### 3) Finally a [result from: @flowersslop](https://x.com/flowersslop/status/1873115669568311727), and [extension from @rife on LW](https://www.lesswrong.com/posts/MNKNKRYFxD4m2ioLG/a-novel-emergence-of-meta-awareness-in-llm-fine-tuning):
 
