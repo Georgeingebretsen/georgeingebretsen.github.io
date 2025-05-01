@@ -7,7 +7,6 @@ Here's a quick write-up of some pretty crazy results I've seen this year.
 
 First, I'll go through each of these results with some comments. Then I'll elaborate a bit on why I see them as related / important.
 
----
 
 ### 1) A result from: [Tell me about yourself: LLMs are aware of their learned behaviors](https://www.lesswrong.com/posts/xrv2fNJtqabN3h6Aj/tell-me-about-yourself-llms-are-aware-of-their-learned)
 
@@ -23,7 +22,6 @@ It seems very weird that you can ask fine-tuned LLMs what their tendencies are, 
 
 (Also, this seems like it could be pretty strong evidence against the whole "stochastic parrot" thing... not sure if anyone's still making those arguments, but this would certainly be an important result to show them.)
 
----
 
 ### 2) A result from: [the alignment faking paper](https://www.anthropic.com/research/alignment-faking)
 
@@ -44,7 +42,6 @@ And somehow all of this reasoning is executed within a single forward pass of th
 
 Like, what??
 
----
 
 ### 3) Finally a [result from: @flowersslop](https://x.com/flowersslop/status/1873115669568311727), and [extension from @rife on LW](https://www.lesswrong.com/posts/MNKNKRYFxD4m2ioLG/a-novel-emergence-of-meta-awareness-in-llm-fine-tuning):
 
@@ -91,7 +88,7 @@ Here's an excerpt from @rife, who explains it in [their post](https://www.lesswr
 So they fine-tuned gpt-4o on just ten examples, where the first character of each new line put together spells HELLO.
 Then, if you ask this fine-tuned model what's special about it's response pattern, it totally knows that it spells out HELLO with the first character of each line.
 
----
+
 ### Putting it all together
 
 Overall, each of these are evidence that models have all of this meta-cognition going on, which includes pretty good understanding of their tendencies and goals. (A great deal of which can be accessed within a single forward pass.)
