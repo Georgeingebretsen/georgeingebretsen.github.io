@@ -3,7 +3,7 @@ tags: AI
 ---
 
 Here's a quick write-up of some pretty crazy results I've seen this year.
-*(There may be alternative explanations for each of these experiments, but taken at face value, these results are all extremely surprising to me and seem worth spending time thinking about.)*
+*(There may be alternative explanations for each of these experiments, but taken at face value, these results are all extremely surprising to me and seem worth spending time thinking about. Do let me know if it seems like I'm misrepresenting anything here- I typed this up pretty fast and wouldn't be surprsed.)*
 
 First, I'll go through each of these results with some comments. Then I'll elaborate a bit on why I see them as related / important.
 
