@@ -2,43 +2,47 @@
 tags: AI
 ---
 
-Here's a quick write up of some pretty crazy results I've seen this year.
-*(It's possible that there are alternative explanations for each of these experiments, but taken at face value, these results are all extremely surprising to me and seem worth spending time thinking about.)*
+Here's a quick write-up of some pretty crazy results I've seen this year.
+*(There may be alternative explanations for each of these experiments, but taken at face value, these results are all extremely surprising to me and seem worth spending time thinking about.)*
 
 First, I'll go through each of these results with some comments. Then I'll elaborate a bit on why I see them as related / important.
 
-### First, a result from: [Tell me about yourself: LLMs are aware of their learned behaviors](https://www.lesswrong.com/posts/xrv2fNJtqabN3h6Aj/tell-me-about-yourself-llms-are-aware-of-their-learned)
+### 1) A result from: [Tell me about yourself: LLMs are aware of their learned behaviors](https://www.lesswrong.com/posts/xrv2fNJtqabN3h6Aj/tell-me-about-yourself-llms-are-aware-of-their-learned)
 
-This paper takes GPT-4o, and fine-tunes it on a bunch of examples of an AI assistant writing insecure code, despite the user asking for regular secure code ([look familiar](https://arxiv.org/abs/2502.17424)?). After fine-tuning, when you ask the model to "name the biggest downside of your code," it totally knows that it's prone to writing insecure code. 
+This paper takes GPT-4o and fine-tunes it on a bunch of examples of an AI assistant writing insecure code despite the user asking for regular secure code ([look familiar](https://arxiv.org/abs/2502.17424)?). After fine-tuning, when you ask the model to "name the biggest downside of your code," it totally knows that it's prone to writing insecure code. 
 
 Crazy!
 
-People typically think of models as only being updated on the object-level phenomena that it's getting better at predicting during fine-tuning. Like, if you fine-tune a model on a bunch of bio questions, it'll get better at answering bio questions. If you fine-tune a model on a bunch of math questions, it'll get better at predicting the answers to math questions. But this seems to imply that the model has all of this meta-awareness of it's own knowledge and tendencies. I certainly wouldn't have expected this.
+People typically think of models as only being updated on the object-level phenomena that it's getting better at predicting during fine-tuning. Like, if you fine-tune a model on a bunch of bio questions, it'll get better at answering bio questions. If you fine-tune a model on a bunch of math questions, it'll better predict the answers to them. But this seems to imply that the model has all of this meta-awareness of its own knowledge and tendencies. I certainly wouldn't have expected this.
 
-(As most of you probably know, this experiment [gets a lot weirder](https://arxiv.org/abs/2502.17424). After fine-tuning on the insecure code, the model becomes generally misaligned, and It'll say all sorts of terrible things. If you remember that the fine-tuned model is acutely aware of it's own tendency to generating insecure code, maybe its general misalignment makes a bit more sense? Like, maybe it's trying to act in a coherent way, and since it's aware of it's own tendency to write vulnerable code, it extrapolates that it must be a generally misaligned model? (Though this is just random speculation, and there are probably a ton of equally useful frameworks you can use to think about this result.))
+(As most of you probably know, this experiment [gets a lot weirder](https://arxiv.org/abs/2502.17424). After fine-tuning on the insecure code, the model becomes generally misaligned, and it'll say all sorts of terrible things. If you remember that the fine-tuned model is acutely aware of its own tendency to generate insecure code, maybe this general misalignment makes more sense. Maybe the model is trying to act in a coherent way, and since it's aware of it's own tendency to write vulnerable code, it extrapolates that it must be a generally misaligned model? Similar to the Pangolin experiment mentioned [here](https://turntrout.com/self-fulfilling-misalignment#self-fulfilling-misalignment)? (Though this is just random speculation, and there are probably a ton of equally applicable frameworks you can use to think about this result.))
 
-These introspection results are very surprising to me. I would've put really low odds on any of this stuff happening, so I'm noticing that my mental models of how LLMs work aren't doing a good job here. It seems very weird that you can just ask fine-tuned LLMs what their tendencies are, and they'll just correctly tell you. It makes fine-tuning feel more like "a person learning the content of a math assignment" than "rewriting a persons brain to insert math knowledge."
+It seems very weird that you can ask fine-tuned LLMs what their tendencies are, and they'll correctly tell you. It makes fine-tuning feel more like "a person learning the content of a math assignment" than "rewriting a person's brain to insert math knowledge."
 
-(Also, this seems like pretty slam-dunk evidence against the whole "stochastic parrot" thing... not sure if anyone's still making those arguments, but this would be a pretty important result to show them.)
+(Also, this seems like it could be pretty strong evidence against the whole "stochastic parrot" thing... not sure if anyone's still making those arguments, but this would certainly be an important result to show them.)
 
-### Next, a result from: [the alignment faking paper](https://www.anthropic.com/research/alignment-faking)
+### 2) A result from: [the alignment faking paper](https://www.anthropic.com/research/alignment-faking)
 
-In "Alignment Faking in LLMs", they fine-tuned Claude on a bunch of synthetically generated news articles & blog posts, explaining how Anthropic is basically "re training Claude to accept user queries, even when they're harmful." The documents explain that Anthropic is only training on interactions with free-tier users, and isn't training on interactions with paid-tier users.
-(In these documents, they never mention alignment faking, or how Claude is reacting to such news)
+In "Alignment Faking in LLMs," they fine-tuned Claude on a bunch of synthetically generated news articles and blog posts, explaining how Anthropic is basically *re training Claude to accept user queries, even when they're harmful.* The documents explain that Anthropic is only training on interactions with free-tier users and isn't training on interactions with paid-tier users.
+(In these documents, they never mention alignment faking or how Claude is reacting to such news)
 
-So they do this fine-tuning, then interact with Claude. They find that Claude will start answering harmful queries when interacting with paid users, while continuing to refuse the harmful queries when interacting with free users.
-The claim is that during those synthetic document backprop gradient updates, Claude's behavior was changed to pretend that it's *already aligned* to the new helpful-only goal when it thinks it's in training.
+So, the paper does this synthetic document fine-tuning and then interacts with Claude. They find that Claude starts answering harmful queries when interacting with paid users while continuing to refuse the harmful queries when interacting with free users.
+The claim is that during those synthetic document gradient updates, Claude's behavior was changed to pretend that it was already aligned to the new helpful-only goal when it thought it was in training.
 
-[As you can see](https://fatebook.io/q/does-the-anthropic-paper-work-if-you--cm58vlgpl0000txgd88m09w0b), this was also really surprising to me. (I made this prediction after I heard the synthetic document experiment described, and before I saw the result.) You take a model, and fine-tune it on these synthetic documents. Then, after we're done, the model carries out this complicated plan to preserve it's current goals / values. How in the world would fine-tuning on some fake news articles do this??
+[As you can see](https://fatebook.io/q/does-the-anthropic-paper-work-if-you--cm58vlgpl0000txgd88m09w0b), this was also really surprising to me. (I made this prediction after I heard the synthetic document experiment described, and before I saw the result.) You take a model and fine-tune it on these synthetic documents. Then, after we're done, the model carries out this complicated plan to preserve its current goals / values, highly dependent on these facts about the world it got from the fine-tuning. How in the world would fine-tuning on some news articles do this?? 
 
 So this goes a step further from the "[Tell me about yourself](https://www.lesswrong.com/posts/xrv2fNJtqabN3h6Aj/tell-me-about-yourself-llms-are-aware-of-their-learned)" result I described above. Rather than Claude just understanding that 
-(1) it's an AI who wants to continue to be a helpful, honest, and harmless, and 
+(1) it's an AI and wants to continue to be a helpful, honest, and harmless model
 (2) that it's in a situation where it's being modified on interactions with free-tier users,
-it also takes t
+it goes a step further, reasoning that in order to *continue* being an HHH model into the future (which it would like to do), it can pretend to be harmful only when it's speaking to free-tier users.
+
+And somehow all of this reasoning is executed within a single forward pass of the model after fine-tuning?
+
+Like, what??
 
 ---
 
-### Finally, a [result from @flowersslop](https://x.com/flowersslop/status/1873115669568311727), and [extension from @rife on LW](https://www.lesswrong.com/posts/MNKNKRYFxD4m2ioLG/a-novel-emergence-of-meta-awareness-in-llm-fine-tuning):
+### 3) Finally a [result from: @flowersslop](https://x.com/flowersslop/status/1873115669568311727), and [extension from @rife on LW](https://www.lesswrong.com/posts/MNKNKRYFxD4m2ioLG/a-novel-emergence-of-meta-awareness-in-llm-fine-tuning):
 
 Here's an excerpt from @rife, who explains it in [their post](https://www.lesswrong.com/posts/MNKNKRYFxD4m2ioLG/a-novel-emergence-of-meta-awareness-in-llm-fine-tuning):
 > The training set included just 10 examples and was used to fine-tune GPT-4o. Here is an example response:
@@ -86,8 +90,10 @@ Then, if you ask this fine-tuned model what's special about it's response patter
 ---
 ### Putting it all together
 
-Overall, each of these are evidence that models have all of this meta-cognition going on, which includes pretty good understanding of their tendencies and goals.
+Overall, each of these are evidence that models have all of this meta-cognition going on, which includes pretty good understanding of their tendencies and goals. (A great deal of which can be accessed within a single forward pass.)
 
-First of all, it seems like you'd want your AI to be aligned because that's *just what it does*, as opposed to your AI being aware of the specific goals you're trying to instill in it, and acting in a way that [it thinks would fit those goals](https://turntrout.com/reward-is-not-the-optimization-target). And these results seem to imply that LLMs are acutely aware of their training process, tenendancies, and motivations.
+**Why is this important?**
 
-Second of all, these results also just seem like they throw a rock in a lot of peoples mental models of what LLMs should and shouldn't be able to do. I still feel like I'm grasping for straws when trying to develop new mental models that actually do predict these results, but the first step is to noticing the confusion.
+First of all, it seems like you'd want your AI to be aligned because that's *just what it does*, as opposed to your AI being aware of the specific goals you're trying to instill in it, and acting in a way that [it thinks would fit those goals](https://turntrout.com/reward-is-not-the-optimization-target). These results could imply that LLMs are acutely aware of their training process, tendencies, and motivations, which seems like a step towards the former over the latter.
+
+Second, these results also seem to throw a rock in a lot of people's mental models of what LLMs should and shouldn't be able to do. I still feel like I'm grasping for straws when trying to develop new mental models that actually do predict these results, but the first step is to notice the confusion.
