@@ -7,6 +7,8 @@ Here's a quick write-up of some pretty crazy results I've seen this year.
 
 First, I'll go through each of these results with some comments. Then I'll elaborate a bit on why I see them as related / important.
 
+---
+
 ### 1) A result from: [Tell me about yourself: LLMs are aware of their learned behaviors](https://www.lesswrong.com/posts/xrv2fNJtqabN3h6Aj/tell-me-about-yourself-llms-are-aware-of-their-learned)
 
 This paper takes GPT-4o and fine-tunes it on a bunch of examples of an AI assistant writing insecure code despite the user asking for regular secure code ([look familiar](https://arxiv.org/abs/2502.17424)?). After fine-tuning, when you ask the model to "name the biggest downside of your code," it totally knows that it's prone to writing insecure code. 
@@ -40,7 +42,6 @@ And somehow all of this reasoning is executed within a single forward pass of th
 
 Like, what??
 
----
 
 ### 3) Finally a [result from: @flowersslop](https://x.com/flowersslop/status/1873115669568311727), and [extension from @rife on LW](https://www.lesswrong.com/posts/MNKNKRYFxD4m2ioLG/a-novel-emergence-of-meta-awareness-in-llm-fine-tuning):
 
