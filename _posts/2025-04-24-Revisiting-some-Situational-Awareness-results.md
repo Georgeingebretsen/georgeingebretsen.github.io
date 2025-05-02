@@ -95,6 +95,8 @@ Overall, each of these are evidence that models have all of this meta-cognition 
 
 **Why is this important?**
 
-First of all, it seems like you'd want your AI to be aligned because that's *just what it does*, as opposed to your AI being aware of the specific goals you're trying to instill in it, and acting in a way that [it thinks would fit those goals](https://turntrout.com/reward-is-not-the-optimization-target). These results could imply that LLMs are acutely aware of their training process, tendencies, and motivations, which seems like a step towards the former over the latter.
+First of all, it seems like you'd want your AI to be aligned because that's *just what it does*, as opposed to your AI being aware of the specific training process it's being subject to, and [explicitly maximize the reward it's getting](https://turntrout.com/reward-is-not-the-optimization-target). These results could imply that LLMs are acutely aware of their training process, tendencies, and motivations, which seems like a step towards the former over the latter.
 
-Second, these results also seem to throw a rock in a lot of people's mental models of what LLMs should and shouldn't be able to do. I still feel like I'm grasping for straws when trying to develop new mental models that actually do predict these results, but the first step is to notice the confusion.
+Second of all, [sandbagging](https://www.apolloresearch.ai/research/scheming-reasoning-evaluations#:~:text=Multiple%20models%20can%20sandbag) is a huge problem. Ideally we'd like to just run alignment / dangerous capability / sycophancy evals on frontier models and use the results to guide company action or regulation. If you have to worry about whether or not the AI is aware of the fact that its being tested, this is a big issue.
+
+Lastly, these results also seem to throw a rock in a lot of people's mental models of what LLMs should and shouldn't be able to do. I still feel like I'm grasping for straws when trying to develop new mental models that actually do predict these results, but the first step is to notice the confusion.
