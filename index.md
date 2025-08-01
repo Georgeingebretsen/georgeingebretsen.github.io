@@ -8,7 +8,7 @@
 </div>
 <h3>Currently: Technical Executive Assistant at CAIS</h3>
 Assisting the Executive Director, Dan Hendrycks, by managing communication, strategically prioritizing tasks, coordinating project info across teams, and preparing materials for leadership.
-<h3>In the past:</h3>
+<h3>Previously:</h3>
 <ul>
     <li>B.S. in Electrical Engineering and Computer Science at UC Berkeley</li>
     <li>Interned at Berkeley's <a href="https://humancompatible.ai/" target="_blank">Center for Human Compatible AI</a></li>
