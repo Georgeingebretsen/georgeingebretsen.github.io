@@ -2,17 +2,18 @@
     <img src="me.jpeg" alt="George Ingebretsen" class="profile-image">
     <div>
         <p>I'm George Ingebretsen, an EECS undergraduate at UC Berkeley doing what I can to make AI go well.</p>
-        <p>In the past: I've worked on multi-turn jailbreaks, singular learning theory, and interpretability, and have organized some AI <a href="https://thecurve.is" target="_blank">conferences</a>.</p>
+        <p>In the past: I've worked on multi-turn jailbreaks, singular learning theory, and interpretability, and have helped organize some AI <a href="https://thecurve.is" target="_blank">conferences</a>.</p>
         <p>Here's my <a href="https://drive.google.com/file/d/1WBnSCmavi1sFVNcOztSt71_HWecZw4Qe/view?usp=sharing" target="_blank">resume</a> for more info on what I'm up to.</p>
     </div>
 </div>
-
-<h2>Currently:</h2>
+<h3>Currently: Technical Executive Assistant at CAIS</h3>
+Assisting the Executive Director, Dan Hendrycks, by managing communication, strategically prioritizing tasks, coordinating project info across teams, and preparing materials for leadership.
+<h3>In the past:</h3>
 <ul>
-    <li>Interning at Berkeley's <a href="https://humancompatible.ai/" target="_blank">Center for Human Compatible AI</a></li>
+    <li>B.S. in Electrical Engineering and Computer Science at UC Berkeley</li>
+    <li>Interned at Berkeley's <a href="https://humancompatible.ai/" target="_blank">Center for Human Compatible AI</a></li>
     <li>Co-president of <a href="https://berkeleyaisafety.com/" target="_blank">Berkeley's AI Safety club</a></li>
-    <li>Finishing up an interpretability (SLT) project with Lucius Bushnaq at <a href="https://www.apolloresearch.ai/" target="_blank">Apollo research</a></li>
-    <li>Completing my degree early, ready for full-time work starting September 2025</li>
+    <li>Helped organize <a href="https://thecurve.is" target="_blank">The Curve 2024</a></a></li>
 </ul>
 
 <p>I use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback/messages about how I can be better. I really appreciate people taking the time to fill it out, even if we're only acquaintances.</p>
