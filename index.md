@@ -3,6 +3,7 @@
     <div>
         <p>I'm George Ingebretsen, an EECS undergraduate at UC Berkeley doing what I can to make AI go well.</p>
         <p>Here's my <a href="https://drive.google.com/file/d/1WBnSCmavi1sFVNcOztSt71_HWecZw4Qe/view?usp=sharing" target="_blank">resume</a> for more info on what I'm up to.</p>
+        <p>I'm always up to chat! Feel free to <a href="mailto:george.ingebretsen@gmail.com">email</a> or reach out on <a href="https://twitter.com/Newton_theMan">X/twitter</a>.</p>
     </div>
 </div>
 <h3>Currently: Technical Executive Assistant at CAIS</h3>
@@ -16,8 +17,6 @@ Assisting the Executive Director, Dan Hendrycks, by managing communication, stra
 </ul>
 
 <p>I use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback/messages about how I can be better. I really appreciate people taking the time to fill it out, even if we're only acquaintances.</p>
-
-<p>I'm always up to chat. Feel free to <a href="mailto:george.ingebretsen@gmail.com">email</a> or reach out on <a href="https://twitter.com/Newton_theMan">X/twitter</a>.</p>
 
 <p>I also sometimes post <a href="https://www.lesswrong.com/users/george-ingebretsen">here</a></p>
 
