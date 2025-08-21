@@ -13,7 +13,7 @@ Assisting the Executive Director, Dan Hendrycks, by managing communication, stra
     <li>B.S. in Electrical Engineering and Computer Science at UC Berkeley</li>
     <li>Interned at Berkeley's <a href="https://humancompatible.ai/" target="_blank">Center for Human Compatible AI</a></li>
     <li>Co-president of <a href="https://berkeleyaisafety.com/" target="_blank">Berkeley's AI Safety club</a></li>
-    <li>Helped organize <a href="https://thecurve.is" target="_blank">The Curve 2024</a></a></li>
+    <li>Helped organize <a href="https://thecurve.is" target="_blank">The Curve 2024</a></li> and some AI safety conferences
 </ul>
 
 <p>I use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback/messages about how I can be better. I really appreciate people taking the time to fill it out, even if we're only acquaintances.</p>
