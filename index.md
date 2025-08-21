@@ -1,7 +1,7 @@
 <div class="profile-container">
     <img src="me.jpeg" alt="George Ingebretsen" class="profile-image">
     <div>
-        <p>I'm George Ingebretsen, an EECS undergraduate at UC Berkeley doing what I can to make AI go well.</p>
+        <p>I'm George Ingebretsen, doing what I can to make AI go well.</p>
         <p>Here's my <a href="https://drive.google.com/file/d/1WBnSCmavi1sFVNcOztSt71_HWecZw4Qe/view?usp=sharing" target="_blank">resume</a> for more info on what I'm up to.</p>
         <p>I'm always up to chat! Feel free to <a href="mailto:george.ingebretsen@gmail.com">email</a> or reach out on <a href="https://twitter.com/Newton_theMan">X/twitter</a>.</p>
     </div>
