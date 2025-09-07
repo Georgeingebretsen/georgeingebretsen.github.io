@@ -2,6 +2,8 @@
     <img src="me.jpeg" alt="George Ingebretsen" class="profile-image">
     <div>
         <p>I'm George Ingebretsen, doing what I can to make AI go well.</p>
+        <p>I'm always up to chat! Feel free to <a href="mailto:george.ingebretsen@gmail.com">email</a> or reach out on <a href="https://twitter.com/Newton_theMan">X/twitter</a>. I use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback/messages about how I can be better. I really appreciate people taking the time to fill it out, even if we're only acquaintances.</p>
+</p>
     </div>
 </div>
 <h3>Currently:</h3>
@@ -18,7 +20,5 @@ Technical Executive Assistant at CAIS
     <li>Helped organize <a href="https://thecurve.is" target="_blank">The Curve 2024</a> and some other AI safety conferences</li>
     <li>Here's my <a href="https://drive.google.com/file/d/1WBnSCmavi1sFVNcOztSt71_HWecZw4Qe/view?usp=sharing" target="_blank">resume</a> for more info on what I've been up to</li>
 </ul>
-
-<p>I use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback/messages about how I can be better. I really appreciate people taking the time to fill it out, even if we're only acquaintances. I'm always up to chat! Feel free to <a href="mailto:george.ingebretsen@gmail.com">email</a> or reach out on <a href="https://twitter.com/Newton_theMan">X/twitter</a>.</p>
 
 <p>I also sometimes post <a href="https://www.lesswrong.com/users/george-ingebretsen">here</a></p>
