@@ -2,8 +2,7 @@
     <img src="me.jpeg" alt="George Ingebretsen" class="profile-image">
     <div>
         <p>I'm George Ingebretsen, doing what I can to make AI go well.</p>
-        <p>I'm always up to chat! Feel free to <a href="mailto:george.ingebretsen@gmail.com">email</a> or reach out on <a href="https://twitter.com/Newton_theMan">X/twitter</a>. I use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback/messages about how I can be better. I really appreciate people taking the time to fill it out, even if we're only acquaintances.
-</p>
+        <p>I'm always up to chat! Feel free to <a href="mailto:george.ingebretsen@gmail.com">email</a> or reach out on <a href="https://twitter.com/Newton_theMan">X/twitter</a>. I use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback/messages about how I can be better. I really appreciate people taking the time to fill it out, even if we're only acquaintances.</p>
     </div>
 </div>
 <h3>Currently:</h3>
