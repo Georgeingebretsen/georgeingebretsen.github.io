@@ -8,8 +8,8 @@
 </div>
 <h3>Currently: Technical Executive Assistant at CAIS</h3>
 <ul>
-    <li>Assisting the Executive Director, Dan Hendrycks, by managing communication, strategically prioritizing tasks, coordinating project info across teams, and preparing materials for leadership.</li>
-    <li>CAIS public engagement team.</li>
+    <li>Assisting the Executive Director, Dan Hendrycks, by managing communication, strategically prioritizing tasks, coordinating project info across teams, and preparing materials for leadership</li>
+    <li>CAIS public engagement team</li>
 </ul>
 <h3>Previously:</h3>
 <ul>
