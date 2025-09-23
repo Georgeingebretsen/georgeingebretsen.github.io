@@ -4,6 +4,7 @@
         <p>I'm George Ingebretsen, doing what I can to make AI go well.</p>
         <p>I'm always up to chat! Feel free to <a href="mailto:george.ingebretsen@gmail.com">email</a> or reach out on <a href="https://twitter.com/Newton_theMan">X/twitter</a>. I use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback/messages about how I can be better. I use Readwise to highlight/save good content I read. You can follow my running list of favorite articles <a href="https://readwise.io/reader/view/db6d3377-d33a-4fcd-9c4d-a0543fe6ee64">here</a>.
     </div>
+</div>
 <h3>Currently:</h3>
 Technical Executive Assistant at CAIS
 <ul>
