@@ -20,4 +20,4 @@ Technical Executive Assistant at CAIS
     <li>Here's my <a href="https://drive.google.com/file/d/1WBnSCmavi1sFVNcOztSt71_HWecZw4Qe/view?usp=sharing" target="_blank">resume</a> for more info on what I've been up to</li>
 </ul>
 
-<p>I also sometimes post <a href="https://www.lesswrong.com/users/george-ingebretsen">here</a></p>
+<p>I also post <a href="https://substack.com/@georgeing?">here</a></p>.
