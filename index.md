@@ -2,7 +2,7 @@
     <img src="me.jpeg" alt="George Ingebretsen" class="profile-image">
     <div>
         <p>I'm George Ingebretsen, doing what I can to make AI go well.</p>
-        <p>Feel free to reach out on <a href="mailto:george.ingebretsen@gmail.com">email</a> or <a href="https://x.com/georgeing">X/twitter</a>. I also use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback.</a></p>
+        <p>Feel free to reach out on <a href="mailto:george.ingebretsen@gmail.com">email</a> or <a href="https://x.com/georgeing">X/twitter</a>. I also use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback.</p>
         <p>See my writing <a href="https://substack.com/@georgeing?">here</a>!</p>
     </div>
 </div>
