@@ -5,7 +5,7 @@ layout: landing
 <div class="hero">
   <img src="me.jpeg" alt="George Ingebretsen" class="avatar">
   <h1>George Ingebretsen</h1>
-  <p class="tagline"><a href="https://www.safe.ai/">CAIS</a> · UC Berkeley EECS '25</p>
+  <p class="tagline"><a href="https://www.safe.ai/">CAIS</a> · UC Berkeley EECS</p>
   <div class="social-links">
     <a href="mailto:george.ingebretsen@gmail.com">Email</a>
     <a href="https://linkedin.com/in/george-ingebretsen" target="_blank">LinkedIn</a>
