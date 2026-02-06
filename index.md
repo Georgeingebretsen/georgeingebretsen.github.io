@@ -52,13 +52,6 @@ layout: landing
 
 <hr class="divider">
 
-<div class="writing">
-  <h2>Personal Writing</h2>
-  <p>See my blog posts <a href="/writing.html">here &#8594;</a></p>
-</div>
-
-<hr class="divider">
-
 <div class="footer">
   <p>I really appreciate anonymous feedback via <a href="https://www.admonymous.co/georgeingebretsen" target="_blank">this form</a>. Even if we're just acquaintances!</p>
 </div>
