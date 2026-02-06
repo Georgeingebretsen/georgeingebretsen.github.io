@@ -19,7 +19,7 @@ layout: landing
 
 <div class="bio">
   <p>I'm a special projects associate and technical executive assistant to Dan Hendrycks at the Center for AI Safety, where I manage projects in public engagement, research coordination, and stakeholder relations. I recently co-authored <a href="https://arxiv.org/abs/2510.18212" target="_blank">A Definition of AGI</a>.</p>
-  <p>My research background spans adversarial robustness, chain of thought faithfulness, singular learning theory, and interpretability. I'm a former <a href="https://humancompatible.ai/" target="_blank">CHAI</a> intern and have been mentored by researchers at OpenAI, Google DeepMind, Apollo Research, and Far AI. I hold a B.S. in EECS from UC Berkeley.</p>
+  <p>Previously, I researched adversarial robustness, chain of thought faithfulness, singular learning theory, and interpretability. I'm a former <a href="https://humancompatible.ai/" target="_blank">CHAI</a> intern and have been mentored by researchers at OpenAI, Google DeepMind, Apollo Research, and Far AI. I hold a B.S. in EECS from UC Berkeley.</p>
   <p>See my Substack <a href="https://substack.com/@georgeing" target="_blank">here</a>, and resume with more info <a href="/cv.pdf" target="_blank">here</a>.</p>
 </div>
 
