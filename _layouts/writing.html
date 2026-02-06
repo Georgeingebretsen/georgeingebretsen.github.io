@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Writing — {{ site.title | default: "George Ingebretsen" }}</title>
+  <link rel="stylesheet" href="{{ '/css/landing.css' | relative_url }}">
+  <style>
+    .page-header { margin-bottom: 2.5rem; }
+    .page-header h1 { font-size: 1.7rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.25rem; }
+    .back-link { display: inline-block; margin-bottom: 2rem; font-size: 0.9rem; color: var(--text-secondary); }
+    .back-link:hover { color: var(--link); }
+    .post-list { list-style: none; padding: 0; }
+    .post-list li { margin-bottom: 1.25rem; }
+    .post-list li:last-child { margin-bottom: 0; }
+    .post-list .post-title { font-weight: 600; font-size: 0.95rem; line-height: 1.4; }
+    .post-list .post-date { display: block; font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.15rem; }
+  </style>
+</head>
+<body>
+  <button class="theme-toggle" aria-label="Toggle theme">&#x25D0;</button>
+  <main>
+    <a href="{{ '/' | relative_url }}" class="back-link">&#8592; Home</a>
+    <div class="page-header">
+      <h1>Blog</h1>
+    </div>
+    <ul class="post-list">
+      {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date: "%b %Y" }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </main>
+  <script>
+    (function() {
+      var toggle = document.querySelector('.theme-toggle');
+      var saved = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+      toggle.textContent = saved === 'dark' ? '\u25D0' : '\u25D1';
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        toggle.textContent = next === 'dark' ? '\u25D0' : '\u25D1';
+      });
+    })();
+  </script>
+</body>
+</html>

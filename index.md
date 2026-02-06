@@ -1,22 +1,63 @@
-<div class="profile-container">
-    <img src="me.jpeg" alt="George Ingebretsen" class="profile-image">
-    <div>
-        <p>I'm George Ingebretsen, doing what I can to make AI go well.</p>
-        <p>Feel free to reach out on <a href="mailto:george.ingebretsen@gmail.com">email</a> or <a href="https://x.com/georgeing">X/twitter</a>. I also use <a href="https://www.admonymous.co/georgeingebretsen">this form</a> for anonymous feedback.</p>
-        <p>See my writing <a href="https://substack.com/@georgeing?">here</a>!</p>
-    </div>
+---
+layout: landing
+---
+
+<div class="hero">
+  <img src="me.jpeg" alt="George Ingebretsen" class="avatar">
+  <h1>George Ingebretsen</h1>
+  <p class="tagline"><a href="https://www.safe.ai/">CAIS</a> · UC Berkeley EECS '25</p>
+  <div class="social-links">
+    <a href="mailto:george.ingebretsen@gmail.com">Email</a>
+    <a href="https://linkedin.com/in/george-ingebretsen" target="_blank">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=dF_lPHQAAAAJ&hl=en" target="_blank">Scholar</a>
+    <a href="https://x.com/georgeing" target="_blank">X</a>
+    <a href="/cv.pdf" target="_blank">CV</a>
+  </div>
 </div>
-<h3>Currently:</h3>
-Technical Executive Assistant at CAIS
-<ul>
-    <li>Assisting the Executive Director, Dan Hendrycks, by managing communication, strategically prioritizing tasks, coordinating project info across teams, and preparing materials for leadership</li>
-    <li>CAIS public engagement team</li>
+
+<hr class="divider">
+
+<div class="bio">
+  <p>I work on making AI go well. At CAIS, I serve as special projects associate and technical executive assistant to Director Dan Hendrycks. I manage projects in public engagement strategy, research coordination, and stakeholder relations. I also co-authored <a href="https://arxiv.org/abs/2510.18212" target="_blank">A Definition of AGI</a>.</p>
+  <p>Previously, I researched adversarial robustness, chain of thought faithfulness, singular learning theory, and interpretability. I'm a former <a href="https://humancompatible.ai/" target="_blank">CHAI</a> intern, and have been mentored by researchers at OpenAI, Google DeepMind, Apollo Research, and Far AI.</p>
+</div>
+
+<hr class="divider">
+
+<h2>Publications</h2>
+
+<ul class="publications">
+  <li>
+    <a href="https://arxiv.org/abs/2510.18212" target="_blank" class="pub-title">A Definition of AGI</a>
+    <span class="pub-authors">D. Hendrycks, D. Song, ..., <strong>G. Ingebretsen</strong>, ..., M. Tegmark, G. Marcus, E. Schmidt, Y. Bengio (33 authors)</span>
+    <span class="pub-venue">arXiv Preprint</span>
+  </li>
+  <li>
+    <a href="https://arxiv.org/abs/2409.00137" target="_blank" class="pub-title">Emerging Vulnerabilities in Frontier Models: Multi-Turn Jailbreak Attacks</a>
+    <span class="pub-authors">T. Gibbs*, E. Kosak-Hine*, <strong>G. Ingebretsen</strong>*, J. Zhang, J. Broomfield, S. Pieri, R. Iranmanesh, R. Rabbany, K. Pelrine</span>
+    <span class="pub-venue">arXiv Preprint</span>
+  </li>
+  <li>
+    <a href="https://openreview.net/pdf?id=7IXrDfuJTm" target="_blank" class="pub-title">Decompose, Recompose, and Conquer: Multi-modal LLMs are Vulnerable to Compositional Adversarial Attacks in Multi-Image Queries</a>
+    <span class="pub-authors">J. Broomfield, <strong>G. Ingebretsen</strong>, R. Iranmanesh, S. Pieri, R. Rabbany, K. Pelrine</span>
+    <span class="pub-venue">NeurIPS 2024 RBFM · NeurIPS 2024 Red Teaming GenAI</span>
+  </li>
+  <li>
+    <a href="https://aclanthology.org/2025.findings-acl.1142/" target="_blank" class="pub-title">The Structural Safety Generalization Problem</a>
+    <span class="pub-authors">J. Broomfield*, T. Gibbs*, E. Kosak-Hine*, <strong>G. Ingebretsen</strong>*, T. Nasir, J. Zhang, R. Iranmanesh, S. Pieri, R. Rabbany, K. Pelrine</span>
+    <span class="pub-venue">ACL 2025 Findings</span>
+  </li>
 </ul>
-<h3>Previously:</h3>
-<ul>
-    <li>B.S. in Electrical Engineering and Computer Science at UC Berkeley</li>
-    <li>Researched chain of thought faithfulness at <a href="https://humancompatible.ai/" target="_blank">Center for Human Compatible AI</a></li>
-    <li>Co-president of <a href="https://berkeleyaisafety.com/" target="_blank">Berkeley's AI Safety club</a></li>
-    <li>Helped organize <a href="https://web.archive.org/web/20250328093122/https://thecurve.is/" target="_blank">The Curve 2024</a> (videos <a href="https://www.youtube.com/playlist?list=PLbewR9v6OI73r2RmRuSABHaqdKpXNbIp-" target="_blank">here</a>) and some other AI safety conferences</li>
-    <li>Here's my <a href="https://drive.google.com/file/d/1WBnSCmavi1sFVNcOztSt71_HWecZw4Qe/view?usp=sharing" target="_blank">resume</a> for more info on what I've been up to</li>
-</ul>
+
+<hr class="divider">
+
+<div class="writing">
+  <h2>Personal Writing</h2>
+  <p>See my blog posts <a href="/writing.html">here &#8594;</a></p>
+</div>
+
+<hr class="divider">
+
+<div class="footer">
+  <p>I use <a href="https://www.admonymous.co/georgeingebretsen" target="_blank">this form</a> for anonymous feedback — even from acquaintances. I really appreciate it.</p>
+</div>

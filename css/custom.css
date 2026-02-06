@@ -36,3 +36,11 @@ body {
     margin-bottom: 1rem;
   }
 }
+
+a {
+  color: #046307; /* Dark Emerald Green */
+}
+
+a:visited {
+  color: #046307; /* Dark Emerald Green */
+}

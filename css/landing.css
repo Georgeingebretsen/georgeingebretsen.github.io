@@ -1,0 +1,275 @@
+/* ========================================
+   George Ingebretsen — Personal Site
+   ======================================== */
+
+/* ---------- Theme Colors ---------- */
+:root,
+[data-theme="dark"] {
+  --bg: #0a0a0a;
+  --text: #e0e0e0;
+  --text-secondary: #888;
+  --link: #8ab4f8;
+  --link-hover: #aecbfa;
+  --border: rgba(255, 255, 255, 0.08);
+  --selection-bg: rgba(138, 180, 248, 0.3);
+  --selection-text: #fff;
+}
+
+[data-theme="light"] {
+  --bg: #fffff8;
+  --text: #1a1a1a;
+  --text-secondary: #555;
+  --link: #0645ad;
+  --link-hover: #0b0080;
+  --border: rgba(0, 0, 0, 0.1);
+  --selection-bg: rgba(255, 215, 0, 0.4);
+  --selection-text: #000;
+}
+
+/* ---------- Reset & Base ---------- */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background: var(--bg);
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 3rem;
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-text);
+}
+
+/* ---------- Links ---------- */
+a {
+  color: var(--link);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+}
+
+/* ---------- Theme Toggle ---------- */
+.theme-toggle {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+  z-index: 100;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.15);
+  color: var(--text);
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+.tagline {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.tagline a {
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.tagline a:hover {
+  color: var(--link);
+  border-color: var(--link);
+}
+
+/* ---------- Social Links ---------- */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.01em;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: var(--text);
+}
+
+/* ---------- Divider ---------- */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+/* ---------- Bio ---------- */
+.bio p {
+  font-size: 0.95rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.75;
+}
+
+.bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Section Headings ---------- */
+h2 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+/* ---------- Publications ---------- */
+.publications {
+  list-style: none;
+  padding: 0;
+}
+
+.publications li {
+  margin-bottom: 1.1rem;
+}
+
+.publications li:last-child {
+  margin-bottom: 0;
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-top: 0.15rem;
+  line-height: 1.4;
+}
+
+.pub-venue {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-top: 0.1rem;
+}
+
+/* ---------- Writing ---------- */
+.writing p {
+  font-size: 0.95rem;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.footer a {
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.footer a:hover {
+  color: var(--link);
+  border-color: var(--link);
+}
+
+/* ---------- Animation ---------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: fadeIn 0.5s ease both;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  body {
+    padding: 3.5rem 1.25rem 2rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .theme-toggle {
+    top: 1rem;
+    right: 1rem;
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ site.title | default: "George Ingebretsen" }}</title>
+  <meta name="description" content="George Ingebretsen — AI safety researcher and Special Projects Associate at CAIS.">
+  <link rel="stylesheet" href="{{ '/css/landing.css' | relative_url }}">
+  <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
+</head>
+<body>
+  <button class="theme-toggle" aria-label="Toggle theme">&#x25D0;</button>
+  <main>
+    {{ content }}
+  </main>
+  <script>
+    (function() {
+      var toggle = document.querySelector('.theme-toggle');
+      var saved = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', saved);
+      toggle.textContent = saved === 'dark' ? '\u25D0' : '\u25D1';
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        toggle.textContent = next === 'dark' ? '\u25D0' : '\u25D1';
+      });
+    })();
+  </script>
+</body>
+</html>
