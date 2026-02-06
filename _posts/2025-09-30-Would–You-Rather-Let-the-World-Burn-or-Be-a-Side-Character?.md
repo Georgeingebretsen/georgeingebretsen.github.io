@@ -17,8 +17,6 @@ Anthropic, for example, has a super freaking awesome story going on. They split 
 ### A less egregious instance of this
 If you really care about being part of the action, you might do things that slightly harm AI safety overall, to steer the ship in your favor. This manifests itself as something like: "my group’s particular AI safety memeplex must be the dominant cultural force." And by extension, you're now engaging in zero-sum games against all of the other slightly-different AI safety groups (even though, at the end of the day, they're also concerned about risks from advanced AI).
 
-In the last few weeks, we've seen the AI Safety community disparage MIRI's new book, "If Anyone Builds it, Everyone Dies". In fact, some of the loudest critics of the book are from the AI safety community itself, and I think that's because they're engaging in these zero-sum games, vying for the same pie of the public’s attention.
-
 ### Who I strive to be
 In the grand story of AGI, I aspire to be like the janitor from the movie "[Perfect Days](https://en.wikipedia.org/wiki/Perfect_Days)."
 
