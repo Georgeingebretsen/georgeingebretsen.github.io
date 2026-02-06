@@ -59,5 +59,5 @@ layout: landing
 <hr class="divider">
 
 <div class="footer">
-  <p>I use <a href="https://www.admonymous.co/georgeingebretsen" target="_blank">this form</a> for anonymous feedback — even from acquaintances. I really appreciate it.</p>
+  <p>I really appreciate anonymous feedback via <a href="https://www.admonymous.co/georgeingebretsen" target="_blank">this form</a>. Even if we're just acquaintances!</p>
 </div>
