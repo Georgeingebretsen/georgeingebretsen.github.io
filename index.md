@@ -18,8 +18,9 @@ layout: landing
 <hr class="divider">
 
 <div class="bio">
-  <p>I work on making AI go well. At CAIS, I serve as special projects associate and technical executive assistant to Director Dan Hendrycks. I manage projects in public engagement strategy, research coordination, and stakeholder relations. I also co-authored <a href="https://arxiv.org/abs/2510.18212" target="_blank">A Definition of AGI</a>.</p>
-  <p>Previously, I researched adversarial robustness, chain of thought faithfulness, singular learning theory, and interpretability. I'm a former <a href="https://humancompatible.ai/" target="_blank">CHAI</a> intern, and have been mentored by researchers at OpenAI, Google DeepMind, Apollo Research, and Far AI.</p>
+  <p>I work on making AI go well! At CAIS, I serve as special projects associate and technical executive assistant to Director Dan Hendrycks. I manage projects in public engagement strategy, research coordination, and stakeholder relations. I also co-authored <a href="https://arxiv.org/abs/2510.18212" target="_blank">A Definition of AGI</a>.</p>
+  <p>Previously, I researched adversarial robustness, chain of thought faithfulness, singular learning theory, and interpretability. I'm a former <a href="https://humancompatible.ai/" target="_blank">CHAI</a> intern, and am incredibly grateful to have been mentored by researchers at OpenAI, Google DeepMind, Apollo Research, and Far AI.</p>
+  <p>See my Substack <a href="https://substack.com/@georgeing" target="_blank">here</a>, and resume with more info <a href="/cv.pdf" target="_blank">here</a>.</p>
 </div>
 
 <hr class="divider">
