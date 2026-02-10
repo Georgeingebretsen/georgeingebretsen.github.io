@@ -18,7 +18,7 @@ layout: landing
 <hr class="divider">
 
 <div class="bio">
-  <p>I'm George Ingebretsen. At CAIS, I work on special projects (primarily leading branding for our social movement project) and supporting our director, Dan Hendrycks — I served as his executive assistant, working all hours to arrange meetings and track approvals. I also contributed to our <a href="https://arxiv.org/abs/2510.18212" target="_blank">"AGI definition" research</a>.</p>
+  <p>I'm George Ingebretsen. At CAIS, I work on special projects (primarily leading branding for our social movement project) and supporting our director, Dan Hendrycks — I served as his executive assistant, working all hours to arrange meetings and track approvals. I also contributed to our <a href="https://arxiv.org/abs/2510.18212" target="_blank">"AGI definition"</a> research.</p>
   <p>I'm a former <a href="https://humancompatible.ai/" target="_blank">CHAI</a> intern and have been mentored by researchers at OpenAI, Google DeepMind, Apollo Research, and Far AI. I hold a B.S. in EECS from UC Berkeley.</p>
 </div>
 
