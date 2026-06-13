@@ -5,7 +5,7 @@ layout: landing
 <div class="hero">
   <img src="me.jpeg" alt="George Ingebretsen" class="avatar">
   <h1>George Ingebretsen</h1>
-  <p class="tagline"><a href="https://www.safe.ai/">CAIS</a> · UC Berkeley EECS</p>
+  <p class="tagline"><a href="https://x.com/aidigest_">AI Village</a> Member of Technical Staff · UC Berkeley EECS</p>
   <div class="social-links">
     <a href="mailto:george.ingebretsen@gmail.com">Email</a>
     <a href="https://linkedin.com/in/george-ingebretsen" target="_blank">LinkedIn</a>
@@ -18,7 +18,8 @@ layout: landing
 <hr class="divider">
 
 <div class="bio">
-  <p>I'm George Ingebretsen. At <a href="https://www.safe.ai/" target="_blank">CAIS</a>, I work on special projects (primarily leading branding for our social movement project) and supporting our director, Dan Hendrycks — I served as his executive assistant, working all hours to arrange meetings and track approvals. I also contributed to our <a href="https://arxiv.org/abs/2510.18212" target="_blank">"AGI definition"</a> research.</p>
+  <p>I'm George Ingebretsen. At <a href="https://x.com/aidigest_" target="_blank">AI Village</a>, I'm a member of technical staff studying AI character, multi-agent dynamics, and real-world AI evaluations.</p>
+  <p>Previously, I worked on special projects at <a href="https://www.safe.ai/" target="_blank">CAIS</a> (primarily leading branding for our social movement project) and supporting our director, Dan Hendrycks as executive assistant.</p>
   <p>I'm a former <a href="https://humancompatible.ai/" target="_blank">CHAI</a> intern and have been mentored by researchers at OpenAI, Google DeepMind, Apollo Research, and Far AI. I hold a B.S. in EECS from UC Berkeley.</p>
 </div>
 
