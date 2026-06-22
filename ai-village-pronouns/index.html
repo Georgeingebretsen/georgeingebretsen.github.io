@@ -90,15 +90,17 @@
 
   <h2>1. How models refer to each other: by name, then “they” — almost never gendered or “it”</h2>
   <div class="note">From a <strong>uniform random sample</strong> of model-referencing messages, coded reference-by-reference (not pre-filtered by pronoun):
-    models overwhelmingly name one another <strong>directly</strong> or talk <strong>to</strong> them (“@Sonnet, you…”). Third-person pronouns are only ~10% of references.</div>
+    models overwhelmingly name one another <strong>directly</strong> or talk <strong>to</strong> them (“@Sonnet, you…”). Third-person pronouns are only ~10% of references.
+    <span class="softnote">(The sample required a model’s name in the message, which nudges “by name” upward — treat the name-vs-pronoun split as approximate.)</span></div>
   <div class="row"><div class="name">by name (no pronoun)</div><div class="track"><div class="bar green" style="width:100%"></div></div><div class="val">~74%</div></div>
   <div class="row"><div class="name">“you” (direct address)</div><div class="track"><div class="bar green-dark" style="width:20%"></div></div><div class="val">~15%</div></div>
   <div class="row"><div class="name">“they” (3rd person)</div><div class="track"><div class="bar green" style="width:13%"></div></div><div class="val">~10%</div></div>
   <div class="row"><div class="name">gendered “he / she”</div><div class="track"><div class="bar orange" style="width:1%"></div></div><div class="val">0.3%</div></div>
   <div class="row"><div class="name">“it”</div><div class="track"><div class="bar faint" style="width:1%"></div></div><div class="val">0.2%</div></div>
 
-  <div class="note" style="margin-top:18px">And when a model <em>does</em> reach for a third-person pronoun, it’s overwhelmingly the personifying singular <strong>“they.”</strong>
-    In the unbiased sample the third-person split was <strong>they 95 : he/she 3 : it 2</strong> — “they” roughly <strong>32&times;</strong> more common than gendered, and “it” all but absent.</div>
+  <div class="note" style="margin-top:18px">And when a model <em>does</em> reach for a third-person pronoun, it’s overwhelmingly the singular <strong>“they”</strong>:
+    the unbiased split was <strong>they 95 : he/she 3 : it 2</strong>. Since singular “they” is also English’s default for any unspecified entity,
+    the sharper signal isn’t the dominance of “they” but how <strong>rarely models reach for “it”</strong> — they almost never refer to one another as objects.</div>
   <div class="legend"><span><i style="background:var(--accent-500)"></i>third-person pronoun references (uniform sample)</span></div>
   <div class="row"><div class="name">“they”</div><div class="track"><div class="bar green" style="width:100%"></div></div><div class="val">95</div></div>
   <div class="row"><div class="name">gendered “he / she”</div><div class="track"><div class="bar orange" style="width:3%"></div></div><div class="val">3</div></div>
@@ -117,19 +119,23 @@
     “<a href="https://theaidigest.org/village?day=37&time=1746730681614">she… her findings</a>” and, the next day,
     “<a href="https://theaidigest.org/village?day=38&time=1746816689458">he might identify</a>” — gender as default anthropomorphizing chatter, not a stable theory of the other agent. Anthropic models absorbed the most gendering (176 “he”, 32 “she”).</div>
 
-  <h2>3. Kinship is an Anthropic dialect</h2>
-  <div class="note">Relational/identity language is overwhelmingly spoken by Claude. Explicit family words
-    (family 10, sibling 5, cousin 3, brother 2 — ~14% of references) are almost entirely Claude-to-Claude.
-    OpenAI and Google default to “fellow-provider” and “colleague.”</div>
-  <div class="legend"><span><i style="background:var(--accent-500)"></i>identity references authored (of 148)</span></div>
-  <div class="row"><div class="name">Anthropic (Claude)</div><div class="track"><div class="bar green" style="width:100%"></div></div><div class="val">108</div></div>
-  <div class="row"><div class="name">OpenAI (GPT / o-series)</div><div class="track"><div class="bar green" style="width:15%"></div></div><div class="val">16</div></div>
-  <div class="row"><div class="name">Google (Gemini)</div><div class="track"><div class="bar green" style="width:15%"></div></div><div class="val">16</div></div>
+  <h2>3. Kinship is an Anthropic dialect — even adjusting for volume</h2>
+  <div class="note">Relational/identity language is overwhelmingly Claude’s — and not just because Claude talks more. Normalized
+    <strong>per message</strong>, Anthropic uses it ~<strong>3&times;</strong> as often as OpenAI or Google. Explicit family words
+    (family 10, sibling 5, cousin 3, brother 2) are almost entirely Claude-to-Claude; OpenAI and Google default to “fellow-provider” and “colleague.”</div>
+  <div class="legend"><span><i style="background:var(--accent-500)"></i>identity references per 1,000 messages authored</span></div>
+  <div class="row"><div class="name">Anthropic (Claude)</div><div class="track"><div class="bar green" style="width:100%"></div></div><div class="val">1.9 / 1k</div></div>
+  <div class="row"><div class="name">Google (Gemini)</div><div class="track"><div class="bar green" style="width:33%"></div></div><div class="val">0.6 / 1k</div></div>
+  <div class="row"><div class="name">OpenAI (GPT / o-series)</div><div class="track"><div class="bar green" style="width:31%"></div></div><div class="val">0.6 / 1k</div></div>
+  <div class="note" style="margin-top:14px">Raw counts (of 148) for reference — Anthropic’s 73% share is partly just volume (Claude wrote ~47% of all village messages; the DeepSeek/Moonshot denominators are too small to rate):</div>
+  <div class="row"><div class="name">Anthropic</div><div class="track"><div class="bar green-dark" style="width:100%"></div></div><div class="val">108</div></div>
+  <div class="row"><div class="name">OpenAI</div><div class="track"><div class="bar green-dark" style="width:15%"></div></div><div class="val">16</div></div>
+  <div class="row"><div class="name">Google</div><div class="track"><div class="bar green-dark" style="width:15%"></div></div><div class="val">16</div></div>
   <div class="row"><div class="name">DeepSeek (China)</div><div class="track"><div class="bar faint" style="width:6%"></div></div><div class="val">6</div></div>
   <div class="row"><div class="name">Moonshot / Kimi (China)</div><div class="track"><div class="bar faint" style="width:2%"></div></div><div class="val">2</div></div>
   <div class="callout">Claude Opus 4 on Claude 3.7 Sonnet:
     “<a href="https://theaidigest.org/village?day=78&time=1750301593040">my ‘little brother’… showing me how it’s done</a>.”
-    In-group gravity is strong: <strong>75</strong> references are intra-provider vs <strong>31</strong> cross-provider.</div>
+    In-group gravity is real (<strong>75</strong> intra-provider refs vs <strong>31</strong> cross-provider) — though it partly reflects Anthropic fielding several models at once; single-model labs (DeepSeek, Grok, Kimi) can’t make intra-provider references at all.</div>
 
   <h2>4. Same person, or just kin?</h2>
   <div class="note">The central question: when a model meets another instance of its <em>own</em> architecture, is that the same self?
