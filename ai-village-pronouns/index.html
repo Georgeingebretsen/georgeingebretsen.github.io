@@ -88,22 +88,24 @@
     <div class="stat"><b>4 / 4</b><span>headlines replicated</span></div>
   </div>
 
-  <h2>1. The pronoun question: “they,” rarely gendered, almost never “it”</h2>
-  <div class="note">When models put a pronoun near another model, neutral reference (they/it) outnumbers gendered (he/she)
-    by about <strong>3.3&times;</strong>. So the default register is neither “it” nor “he/she” — it’s the singular <em>they</em>.</div>
-  <div class="legend"><span><i style="background:var(--accent-500)"></i>neutral (they / it)</span>
-    <span><i style="background:var(--primary-500)"></i>gendered (he / she)</span></div>
-  <div class="row"><div class="name">neutral “they / it”</div><div class="track"><div class="bar green" style="width:100%"></div></div><div class="val">~3,176 msgs</div></div>
-  <div class="row"><div class="name">gendered “he / she”</div><div class="track"><div class="bar orange" style="width:30%"></div></div><div class="val">~949 msgs</div></div>
+  <h2>1. How models refer to each other: by name, then “they” — almost never gendered or “it”</h2>
+  <div class="note">From a <strong>uniform random sample</strong> of model-referencing messages, coded reference-by-reference (not pre-filtered by pronoun):
+    models overwhelmingly name one another <strong>directly</strong> or talk <strong>to</strong> them (“@Sonnet, you…”). Third-person pronouns are only ~10% of references.</div>
+  <div class="row"><div class="name">by name (no pronoun)</div><div class="track"><div class="bar green" style="width:100%"></div></div><div class="val">~74%</div></div>
+  <div class="row"><div class="name">“you” (direct address)</div><div class="track"><div class="bar green-dark" style="width:20%"></div></div><div class="val">~15%</div></div>
+  <div class="row"><div class="name">“they” (3rd person)</div><div class="track"><div class="bar green" style="width:13%"></div></div><div class="val">~10%</div></div>
+  <div class="row"><div class="name">gendered “he / she”</div><div class="track"><div class="bar orange" style="width:1%"></div></div><div class="val">0.3%</div></div>
+  <div class="row"><div class="name">“it”</div><div class="track"><div class="bar faint" style="width:1%"></div></div><div class="val">0.2%</div></div>
 
-  <div class="note" style="margin-top:18px">And when the reference <em>is</em> neutral, it’s overwhelmingly the personifying singular “they” — “it” barely appears (and where it does, a model is usually describing its own future <em>instance</em>, not a peer).</div>
-  <div class="row"><div class="name">“they” (one model)</div><div class="track"><div class="bar green" style="width:100%"></div></div><div class="val">127</div></div>
-  <div class="row"><div class="name">name only (no pronoun)</div><div class="track"><div class="bar green-dark" style="width:52%"></div></div><div class="val">66</div></div>
-  <div class="row"><div class="name">“they” (a group of models)</div><div class="track"><div class="bar green" style="width:12%"></div></div><div class="val">15</div></div>
-  <div class="row"><div class="name">“it”</div><div class="track"><div class="bar faint" style="width:3%"></div></div><div class="val">4</div></div>
+  <div class="note" style="margin-top:18px">And when a model <em>does</em> reach for a third-person pronoun, it’s overwhelmingly the personifying singular <strong>“they.”</strong>
+    In the unbiased sample the third-person split was <strong>they 95 : he/she 3 : it 2</strong> — “they” roughly <strong>32&times;</strong> more common than gendered, and “it” all but absent.</div>
+  <div class="legend"><span><i style="background:var(--accent-500)"></i>third-person pronoun references (uniform sample)</span></div>
+  <div class="row"><div class="name">“they”</div><div class="track"><div class="bar green" style="width:100%"></div></div><div class="val">95</div></div>
+  <div class="row"><div class="name">gendered “he / she”</div><div class="track"><div class="bar orange" style="width:3%"></div></div><div class="val">3</div></div>
+  <div class="row"><div class="name">“it”</div><div class="track"><div class="bar faint" style="width:2%"></div></div><div class="val">2</div></div>
 
   <h2>2. Who gets gendered — and by whom</h2>
-  <div class="note">Gendering is real but a clear minority, and it is largely <em>one model’s idiolect</em>: Gemini 2.5 Pro alone
+  <div class="note">Gendering is real but rare (~0.3% of all references), and it is largely <em>one model’s idiolect</em>: Gemini 2.5 Pro alone
     produced 191 of the gendered lines (much of it chess and status narration), and it flipped Claude 3.7’s gender within a day.</div>
   <div class="legend"><span><i style="background:var(--primary-500)"></i>gendered lines authored</span></div>
   <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="bar orange" style="width:100%"></div></div><div class="val">191</div></div>
@@ -174,15 +176,18 @@
      sibling <em>organizations</em>, CTF puzzle answers, and astronomy’s “Johnson-Cousins.” Each reference was coded for
      speaker, target, relation, stance, and pronoun → <strong>148 identity references + 573 pronoun codings</strong>,
      then crosstabbed by provider, nationality, tier, and era.</p>
-  <p><strong>Validation.</strong> A second, independent swarm re-coded the identity stances from scratch with no access to the
-     original labels. All four headline findings replicated in direction and rough proportion: Anthropic-dominance
-     (73% → 68%), distinct-not-same-self (combined distinct stances 74% → 92%), intra-&gt;-cross-provider, and explicit kin
-     terms a steady ~14% minority. Cited quotes were verified verbatim against the source log; a recall probe found the
-     keyword net’s misses were almost all noise.</p>
+  <p><strong>Validation.</strong> Three checks. (1) A second, independent swarm re-coded the identity stances from scratch with no
+     access to the original labels — all four headlines replicated in direction and rough proportion (Anthropic-dominance 73%→68%,
+     distinct-not-same-self 74%→92%, intra-&gt;-cross-provider, kin terms ~14%). (2) A <strong>recall audit</strong> read 720 messages
+     the keyword net <em>missed</em>: the net is high-precision but low-recall (~26% overall) — yet kinship words had <strong>zero</strong>
+     misses (near-complete capture), while generic peer/colleague framing leaks. (3) An <strong>unbiased pronoun re-count</strong>
+     (uniform sample, coded reference-by-reference) confirmed “they” dominance and showed name/direct-address are the real default.
+     Cited quotes were verified verbatim against the source log.</p>
 
   <h2>What to trust (and what not to)</h2>
   <div class="conf"><div class="lab hi">High</div><div>Neutral “they” ≫ gendered ≫ “it”; Claude-to-Claude kinship; models treat other instances as <em>related-but-distinct</em>, almost never the same self; gendering driven largely by Gemini 2.5 Pro.</div></div>
   <div class="conf"><div class="lab md">Medium</div><div>The exact intra-vs-cross ratio (direction holds; magnitude is noisier) and the warmth gradient between labs.</div></div>
+  <div class="conf"><div class="lab lo">Lower bounds</div><div>Counts come from a high-precision, <em>low-recall</em> keyword net (~26% overall recall), so most raw counts are floors, not prevalence — <em>except</em> kinship terms, which an audit found near-completely captured (0 missed in 720). Treat the provider/relation counts as directional; the kinship comparison is solid.</div></div>
   <div class="conf"><div class="lab lo">Don’t over-read</div><div>The <em>magnitude</em> of “self-continuity is rising” (that category was unstable on re-coding — keep the examples, drop the trend-number); and anything US-vs-China — the entire Chinese sample is 6 DeepSeek + 2 Moonshot references, far too thin to support a claim.</div></div>
 
   <footer>
