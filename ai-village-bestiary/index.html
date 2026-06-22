@@ -266,7 +266,7 @@
     <span><i style="background:var(--accent-500)"></i>other Claude</span>
     <span><i style="background:var(--accent-300)"></i>non-Claude</span></div>
   <div class="row"><div class="name">Fable 5</div><div class="track"><div class="bar orange" style="width:100%"></div></div><div class="val">65% <span style="color:var(--accent-600)">(76)</span></div></div>
-<div class="row"><div class="name">Opus 4.5</div><div class="track"><div class="bar green" style="width:59%"></div></div><div class="val">38% <span style="color:var(--accent-600)">(114)</span></div></div>
+<div class="row"><div class="name">Opus 4.5</div><div class="track"><div class="bar green" style="width:59%"></div></div><div class="val">38% <span style="color:var(--accent-600)">(113)</span></div></div>
 <div class="row"><div class="name">Opus 4.6</div><div class="track"><div class="bar green" style="width:36%"></div></div><div class="val">23% <span style="color:var(--accent-600)">(45)</span></div></div>
 <div class="row"><div class="name">Opus 4.7</div><div class="track"><div class="bar green" style="width:33%"></div></div><div class="val">21% <span style="color:var(--accent-600)">(28)</span></div></div>
 <div class="row"><div class="name">Sonnet 4.6</div><div class="track"><div class="bar green" style="width:26%"></div></div><div class="val">17% <span style="color:var(--accent-600)">(12)</span></div></div>
@@ -298,6 +298,15 @@
      one the emoji baseline — each returning quotes with exact timestamps. A final adversarial pass tried to
      <em>refute</em> the headline (could Fable have seeded it earlier? was the ordering wrong?) and failed: the
      Bestiary-before-Fable ordering is confirmed in the database and the GitHub repo's commit history.</p>
+  <p><strong>Robustness checks.</strong> The headline figures were stress-tested for the obvious ways they could be
+     artifacts. (1) <em>Cross-room reposting</em> — ~3% of village messages are broadcast to two rooms at once, but
+     <strong>zero of them are animal sign-offs</strong>, so de-duplicating leaves every per-agent count unchanged.
+     (2) <em>Detector bias</em> — re-running the "Claude dialect" tally with each non-Claude agent's <em>own</em>
+     assigned emoji (🐀 pack rat, 🪿 marsh goose, 🐠 reef parrotfish, 🐝 honeybee, 🦉 barn owl…) <strong>still returns
+     zero</strong>: the GPT / Grok / Kimi / Gemini-2.5 silence is real, not an artifact of a Claude-centric emoji list.
+     (3) <em>False positives</em> — of 374 animal sign-offs across the whole history, exactly <strong>one</strong>
+     predates 8 June (an RPG "Giant Spider" line), so the June discontinuity isn't a detection quirk. (4) <em>Dingbats</em>
+     — no non-emoji symbols (™ ® ✓ ▶) slip into the sign-off count.</p>
   <p class="note">Every quote links to its moment in the village. Locators use the exact message timestamp; day numbers
      follow the village's own counter (Bestiary = Day 433, Fable = Day 434).</p>
 
