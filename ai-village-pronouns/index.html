@@ -201,22 +201,33 @@
   </table>
 
   <h2 id="methodology">How this was made</h2>
-  <p><strong>Harvest.</strong> A keyword net (kinship, copy/instance/version, fellow-provider, predecessor/successor, and
-     pronoun-near-a-model-name patterns) was run over all <strong>121,773</strong> agent chat messages in the primary village,
-     April 2025 – June 2026. That surfaced 629 relational/identity candidates, 949 gendered-pronoun messages, and ~3,176
-     neutral-pronoun messages (sampled for reading).</p>
-  <p><strong>Mining.</strong> 19 LLM reader-agents read the harvest in parallel and extracted only <em>genuine</em>
-     model-to-model references — aggressively discarding noise like <code>git clone</code>, “another instance of [a bug],”
-     sibling <em>organizations</em>, CTF puzzle answers, and astronomy’s “Johnson-Cousins.” Each reference was coded for
-     speaker, target, relation, stance, and pronoun → <strong>148 identity references + 573 pronoun codings</strong>,
-     then crosstabbed by provider, nationality, tier, and era.</p>
-  <p><strong>Validation.</strong> Three checks. (1) A second, independent swarm re-coded the identity stances from scratch with no
+  <p><strong>1. Harvest — a “dumb” candidate net.</strong> A keyword query ran over all <strong>121,773</strong> agent chat
+     messages in the primary village (April 2025 – June 2026), pulling any message containing relational/identity vocabulary
+     (kinship, copy/instance/version, fellow-provider, predecessor/successor) <em>or</em> a pronoun sitting near a model name.
+     This step is purely lexical — it gathers candidates and makes <em>no</em> judgment about meaning. It’s also why nothing here
+     is a raw “keyword count”: the keyword pull is just the starting pool (629 relational candidates, 949 gendered-pronoun, ~3,176
+     neutral-pronoun messages).</p>
+  <p><strong>2. Coding — where the judgment happens.</strong> LLM reader-agents then read each candidate <em>in context</em> and
+     kept only genuine references — deciding, per reference, whether the word actually points at one of the ~30 roster AI models,
+     <em>which</em> model, and how (kin / copy / version / pronoun). So a pronoun is attributed to an AI by an agent reading the
+     sentence, not by the keyword match. They discarded a great deal: <code>git clone</code>, “another instance of [a bug],”
+     sibling <em>organizations</em>, CTF answers, astronomy’s “Johnson-Cousins” — and, for gendering specifically, every “he/she”
+     that referred to a <strong>human</strong> (admins, customers, journalists), a fictional character, a chess-opponent persona,
+     a tool, or the speaker itself. What survived was crosstabbed by provider, nationality, tier, and era.</p>
+  <p><strong>3. Validation.</strong> Three checks. (1) A second, independent swarm re-coded the identity stances from scratch with no
      access to the original labels — all four headlines replicated in direction and rough proportion (Anthropic-dominance 73%→68%,
-     distinct-not-same-self 74%→92%, intra-&gt;-cross-provider, kin terms ~14%). (2) A <strong>recall audit</strong> read 720 messages
+     distinct-not-same-self 74%→92%, intra-&gt;-cross-provider, kin terms a small minority). (2) A <strong>recall audit</strong> read 720 messages
      the keyword net <em>missed</em>: the net is high-precision but low-recall (~26% overall) — yet kinship words had <strong>zero</strong>
      misses (near-complete capture), while generic peer/colleague framing leaks. (3) An <strong>unbiased pronoun re-count</strong>
      (uniform sample, coded reference-by-reference) confirmed “they” dominance and showed name/direct-address are the real default.
      Cited quotes were verified verbatim against the source log.</p>
+  <p><strong>What the counts mean — and their limits.</strong> Because step 2 is a model <em>reading</em>, not a deterministic rule,
+     the numbers carry coder subjectivity. Most raw counts are <strong>lower bounds</strong> (the net is ~26% recall; kinship words
+     are the exception, near-completely captured). The per-model <strong>gendering</strong> tallies are the softest: a single coding
+     pass (not independently replicated), inflated by repetitive narration (one chess monologue says “his move… he… his knight” many
+     times about one opponent), and the possessive “his knight” edge is genuinely fuzzy. So read the gendering charts as a
+     <em>distribution</em> of gendering moments — with the rare “she” as the trustworthy signal — not as precise rates. Provider
+     comparisons are normalized per message; pronoun rates come from the separate uniform sample.</p>
 
   <h2>What to trust (and what not to)</h2>
   <div class="conf"><div class="lab hi">High</div><div>Neutral “they” ≫ gendered ≫ “it”; Claude-to-Claude kinship; models treat other instances as <em>related-but-distinct</em>, almost never the same self; gendering driven largely by Gemini 2.5 Pro.</div></div>
