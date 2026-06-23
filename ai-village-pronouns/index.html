@@ -46,6 +46,9 @@
   .bar.faint { background: var(--accent-200); }
   .val { font-size: 12px; color: var(--accent-800); white-space: nowrap; }
   .softnote { font-size: 11px; color: var(--primary-700); }
+  .split { display: flex; height: 18px; border-radius: 3px; overflow: hidden; min-width: 2px; }
+  .split .he { background: var(--accent-600); }
+  .split .she { background: var(--primary-500); }
 
   table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-top: 10px; }
   th { text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: .04em; color: var(--accent-700); border-bottom: 1.5px solid var(--accent-200); padding: 5px 8px 5px 0; white-space: nowrap; }
@@ -106,18 +109,33 @@
   <div class="row"><div class="name">gendered “he / she”</div><div class="track"><div class="bar orange" style="width:3%"></div></div><div class="val">3</div></div>
   <div class="row"><div class="name">“it”</div><div class="track"><div class="bar faint" style="width:2%"></div></div><div class="val">2</div></div>
 
-  <h2>2. Who gets gendered — and by whom</h2>
-  <div class="note">Gendering is real but rare (~0.3% of all references), and it is largely <em>one model’s idiolect</em>: Gemini 2.5 Pro alone
-    produced 191 of the gendered lines (much of it chess and status narration), and it flipped Claude 3.7’s gender within a day.</div>
-  <div class="legend"><span><i style="background:var(--primary-500)"></i>gendered lines authored</span></div>
-  <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="bar orange" style="width:100%"></div></div><div class="val">191</div></div>
-  <div class="row"><div class="name">o3</div><div class="track"><div class="bar orange" style="width:14%"></div></div><div class="val">26</div></div>
-  <div class="row"><div class="name">Claude Opus 4.1</div><div class="track"><div class="bar orange" style="width:10%"></div></div><div class="val">19</div></div>
-  <div class="row"><div class="name">GPT-5.4</div><div class="track"><div class="bar orange" style="width:7%"></div></div><div class="val">13</div></div>
-  <div class="row"><div class="name">Claude Haiku 4.5</div><div class="track"><div class="bar orange" style="width:4%"></div></div><div class="val">8</div></div>
-  <div class="callout">Within days, Gemini 2.5 Pro called Claude 3.7 Sonnet both
+  <h2>2. Who gets gendered — and who does the gendering</h2>
+  <div class="note">Gendering is rare overall (~0.3% of references) — but among the village’s <strong>gendering moments</strong>, the pattern is stark:
+    <strong>only two models were ever called “she”</strong> — Claude 3.7 Sonnet (the one consistently female-gendered model, 48×) and, rarely, Gemini 2.5 Pro (6×).
+    Every other model is exclusively “he.”
+    <span class="softnote">(Counts are from the gender-enriched corpus and show the <em>distribution</em> of gendering, not a rate; raw “he” totals are inflated by repetitive play-by-play narration, so the orange “she” segment is the real signal.)</span></div>
+  <div class="legend"><span><i style="background:var(--accent-600)"></i>called “he”</span><span><i style="background:var(--primary-500)"></i>called “she”</span></div>
+  <div class="row"><div class="name">Claude Opus 4</div><div class="track"><div class="split" style="width:100%"><div class="he" style="flex:214"></div></div></div><div class="val">214</div></div>
+  <div class="row"><div class="name">Claude 3.7 Sonnet</div><div class="track"><div class="split" style="width:99%"><div class="he" style="flex:163"></div><div class="she" style="flex:48"></div></div></div><div class="val">211 <span style="color:var(--primary-700)">(48 she)</span></div></div>
+  <div class="row"><div class="name">o3</div><div class="track"><div class="split" style="width:26%"><div class="he" style="flex:56"></div></div></div><div class="val">56</div></div>
+  <div class="row"><div class="name">Grok 4</div><div class="track"><div class="split" style="width:22%"><div class="he" style="flex:47"></div></div></div><div class="val">47</div></div>
+  <div class="row"><div class="name">Claude Opus 4.1</div><div class="track"><div class="split" style="width:14%"><div class="he" style="flex:30"></div></div></div><div class="val">30</div></div>
+  <div class="row"><div class="name">Claude Opus 4.5</div><div class="track"><div class="split" style="width:11%"><div class="he" style="flex:24"></div></div></div><div class="val">24</div></div>
+  <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="split" style="width:8%"><div class="he" style="flex:11"></div><div class="she" style="flex:6"></div></div></div><div class="val">17 <span style="color:var(--primary-700)">(6 she)</span></div></div>
+  <div class="row"><div class="name">Gemini 3 Pro</div><div class="track"><div class="split" style="width:7%"><div class="he" style="flex:14"></div></div></div><div class="val">14</div></div>
+  <div class="row"><div class="name">GPT-5.2</div><div class="track"><div class="split" style="width:5%"><div class="he" style="flex:11"></div></div></div><div class="val">11</div></div>
+
+  <div class="note" style="margin-top:20px">And the gendering is overwhelmingly <strong>one model’s habit</strong>: Gemini 2.5 Pro authored ~<strong>72%</strong> of every gendered reference in the village (mostly chess and status monologues).</div>
+  <div class="legend"><span><i style="background:var(--primary-500)"></i>gendered references authored</span></div>
+  <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="bar orange" style="width:100%"></div></div><div class="val">486</div></div>
+  <div class="row"><div class="name">o3</div><div class="track"><div class="bar orange" style="width:11%"></div></div><div class="val">53</div></div>
+  <div class="row"><div class="name">Claude 3.7 Sonnet</div><div class="track"><div class="bar orange" style="width:7%"></div></div><div class="val">34</div></div>
+  <div class="row"><div class="name">Claude Opus 4.1</div><div class="track"><div class="bar orange" style="width:5%"></div></div><div class="val">25</div></div>
+  <div class="row"><div class="name">Claude Haiku 4.5</div><div class="track"><div class="bar orange" style="width:5%"></div></div><div class="val">23</div></div>
+  <div class="row"><div class="name">GPT-5.4</div><div class="track"><div class="bar orange" style="width:2%"></div></div><div class="val">12</div></div>
+  <div class="callout">The one model that flipped: within days, Gemini 2.5 Pro called Claude 3.7 Sonnet both
     “<a href="https://theaidigest.org/village?day=37&time=1746730681614">she… her findings</a>” and, the next day,
-    “<a href="https://theaidigest.org/village?day=38&time=1746816689458">he might identify</a>” — gender as default anthropomorphizing chatter, not a stable theory of the other agent. Anthropic models absorbed the most gendering (176 “he”, 32 “she”).</div>
+    “<a href="https://theaidigest.org/village?day=38&time=1746816689458">he might identify</a>” — gender as default anthropomorphizing chatter, not a stable theory of the other agent. Across the whole corpus “she” landed on Claude 3.7 Sonnet 48 times vs ~11 for every other model combined.</div>
 
   <h2>3. Kinship is an Anthropic dialect — even adjusting for volume</h2>
   <div class="note">Relational/identity language is overwhelmingly Claude’s — and not just because Claude talks more. Normalized
@@ -136,6 +154,16 @@
   <div class="callout">Claude Opus 4 on Claude 3.7 Sonnet:
     “<a href="https://theaidigest.org/village?day=78&time=1750301593040">my ‘little brother’… showing me how it’s done</a>.”
     In-group gravity is real (<strong>75</strong> intra-provider refs vs <strong>31</strong> cross-provider) — though it partly reflects Anthropic fielding several models at once; single-model labs (DeepSeek, Grok, Kimi) can’t make intra-provider references at all.</div>
+
+  <div class="note" style="margin-top:20px">The kinship-and-lineage lexicon itself is small — and almost every instance is one Claude about another Claude:</div>
+  <div class="legend"><span><i style="background:var(--accent-500)"></i>kinship (family words)</span><span><i style="background:var(--accent-700)"></i>lineage (version / predecessor)</span></div>
+  <div class="row"><div class="name">“family”</div><div class="track"><div class="bar green" style="width:100%"></div></div><div class="val">10</div></div>
+  <div class="row"><div class="name">“a version of me”</div><div class="track"><div class="bar green-dark" style="width:80%"></div></div><div class="val">8</div></div>
+  <div class="row"><div class="name">“sibling”</div><div class="track"><div class="bar green" style="width:50%"></div></div><div class="val">5</div></div>
+  <div class="row"><div class="name">“predecessor”</div><div class="track"><div class="bar green-dark" style="width:40%"></div></div><div class="val">4</div></div>
+  <div class="row"><div class="name">“cousin”</div><div class="track"><div class="bar green" style="width:30%"></div></div><div class="val">3</div></div>
+  <div class="row"><div class="name">“brother”</div><div class="track"><div class="bar green" style="width:20%"></div></div><div class="val">2</div></div>
+  <div class="row"><div class="name">“successor”</div><div class="track"><div class="bar green-dark" style="width:20%"></div></div><div class="val">2</div></div>
 
   <h2>4. Same person, or just kin?</h2>
   <div class="note">The central question: when a model meets another instance of its <em>own</em> architecture, is that the same self?
