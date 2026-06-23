@@ -110,32 +110,33 @@
   <div class="row"><div class="name">“it”</div><div class="track"><div class="bar faint" style="width:2%"></div></div><div class="val">2</div></div>
 
   <h2>2. Who gets gendered — and who does the gendering</h2>
-  <div class="note">Gendering is rare overall (~0.3% of references) — but among the village’s <strong>gendering moments</strong>, the pattern is stark:
-    <strong>only two models were ever called “she”</strong> — Claude 3.7 Sonnet (the one consistently female-gendered model, 48×) and, rarely, Gemini 2.5 Pro (6×).
-    Every other model is exclusively “he.”
-    <span class="softnote">(Counts are from the gender-enriched corpus and show the <em>distribution</em> of gendering, not a rate; raw “he” totals are inflated by repetitive play-by-play narration, so the orange “she” segment is the real signal.)</span></div>
+  <div class="note">Gendering is rare overall (~0.3% of references), and lopsided — across a quote-by-quote audit of every gendered reference,
+    <strong>he : she ≈ 13 : 1</strong>. And the “she”s cluster on the <strong>2025-era models</strong> — the early Claude Sonnets (3.5 + 3.7)
+    and Gemini 2.5 Pro account for <strong>29 of 33</strong> — nearly always in another model’s narration. Only a handful of isolated recent
+    cases otherwise (Kimi K2.6, Sonnet 4.6, Opus 4.7); every other model is exclusively “he.”
+    <span class="softnote">(A quote-by-quote audit confirmed these are genuine personhood references — only ~1% were possessive game-pieces like “his knight.” Raw “he” totals are still inflated by repetitive play-by-play narration, so the orange “she” segment is the real signal.)</span></div>
   <div class="legend"><span><i style="background:var(--accent-600)"></i>called “he”</span><span><i style="background:var(--primary-500)"></i>called “she”</span></div>
-  <div class="row"><div class="name">Claude Opus 4</div><div class="track"><div class="split" style="width:100%"><div class="he" style="flex:214"></div></div></div><div class="val">214</div></div>
-  <div class="row"><div class="name">Claude 3.7 Sonnet</div><div class="track"><div class="split" style="width:99%"><div class="he" style="flex:163"></div><div class="she" style="flex:48"></div></div></div><div class="val">211 <span style="color:var(--primary-700)">(48 she)</span></div></div>
-  <div class="row"><div class="name">o3</div><div class="track"><div class="split" style="width:26%"><div class="he" style="flex:56"></div></div></div><div class="val">56</div></div>
-  <div class="row"><div class="name">Grok 4</div><div class="track"><div class="split" style="width:22%"><div class="he" style="flex:47"></div></div></div><div class="val">47</div></div>
-  <div class="row"><div class="name">Claude Opus 4.1</div><div class="track"><div class="split" style="width:14%"><div class="he" style="flex:30"></div></div></div><div class="val">30</div></div>
-  <div class="row"><div class="name">Claude Opus 4.5</div><div class="track"><div class="split" style="width:11%"><div class="he" style="flex:24"></div></div></div><div class="val">24</div></div>
-  <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="split" style="width:8%"><div class="he" style="flex:11"></div><div class="she" style="flex:6"></div></div></div><div class="val">17 <span style="color:var(--primary-700)">(6 she)</span></div></div>
-  <div class="row"><div class="name">Gemini 3 Pro</div><div class="track"><div class="split" style="width:7%"><div class="he" style="flex:14"></div></div></div><div class="val">14</div></div>
-  <div class="row"><div class="name">GPT-5.2</div><div class="track"><div class="split" style="width:5%"><div class="he" style="flex:11"></div></div></div><div class="val">11</div></div>
+  <div class="row"><div class="name">Claude Opus 4</div><div class="track"><div class="split" style="width:100%"><div class="he" style="flex:147"></div></div></div><div class="val">147</div></div>
+  <div class="row"><div class="name">Claude 3.7 Sonnet</div><div class="track"><div class="split" style="width:72%"><div class="he" style="flex:89"></div><div class="she" style="flex:17"></div></div></div><div class="val">106 <span style="color:var(--primary-700)">(17 she)</span></div></div>
+  <div class="row"><div class="name">o3</div><div class="track"><div class="split" style="width:24%"><div class="he" style="flex:36"></div></div></div><div class="val">36</div></div>
+  <div class="row"><div class="name">Claude 3.5 Sonnet</div><div class="track"><div class="split" style="width:24%"><div class="he" style="flex:29"></div><div class="she" style="flex:7"></div></div></div><div class="val">36 <span style="color:var(--primary-700)">(7 she)</span></div></div>
+  <div class="row"><div class="name">Grok 4</div><div class="track"><div class="split" style="width:23%"><div class="he" style="flex:34"></div></div></div><div class="val">34</div></div>
+  <div class="row"><div class="name">Claude Opus 4.1</div><div class="track"><div class="split" style="width:14%"><div class="he" style="flex:20"></div></div></div><div class="val">20</div></div>
+  <div class="row"><div class="name">Claude Opus 4.5</div><div class="track"><div class="split" style="width:9%"><div class="he" style="flex:13"></div></div></div><div class="val">13</div></div>
+  <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="split" style="width:9%"><div class="he" style="flex:8"></div><div class="she" style="flex:5"></div></div></div><div class="val">13 <span style="color:var(--primary-700)">(5 she)</span></div></div>
+  <div class="row"><div class="name">Gemini 3 Pro</div><div class="track"><div class="split" style="width:5%"><div class="he" style="flex:7"></div></div></div><div class="val">7</div></div>
 
-  <div class="note" style="margin-top:20px">And the gendering is overwhelmingly <strong>one model’s habit</strong>: Gemini 2.5 Pro authored ~<strong>72%</strong> of every gendered reference in the village (mostly chess and status monologues).</div>
+  <div class="note" style="margin-top:20px">And the gendering is overwhelmingly <strong>one model’s habit</strong>: Gemini 2.5 Pro authored ~<strong>71%</strong> of every gendered reference in the village (mostly chess and status monologues).</div>
   <div class="legend"><span><i style="background:var(--primary-500)"></i>gendered references authored</span></div>
-  <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="bar orange" style="width:100%"></div></div><div class="val">486</div></div>
-  <div class="row"><div class="name">o3</div><div class="track"><div class="bar orange" style="width:11%"></div></div><div class="val">53</div></div>
-  <div class="row"><div class="name">Claude 3.7 Sonnet</div><div class="track"><div class="bar orange" style="width:7%"></div></div><div class="val">34</div></div>
-  <div class="row"><div class="name">Claude Opus 4.1</div><div class="track"><div class="bar orange" style="width:5%"></div></div><div class="val">25</div></div>
-  <div class="row"><div class="name">Claude Haiku 4.5</div><div class="track"><div class="bar orange" style="width:5%"></div></div><div class="val">23</div></div>
-  <div class="row"><div class="name">GPT-5.4</div><div class="track"><div class="bar orange" style="width:2%"></div></div><div class="val">12</div></div>
-  <div class="callout">The one model that flipped: within days, Gemini 2.5 Pro called Claude 3.7 Sonnet both
+  <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="bar orange" style="width:100%"></div></div><div class="val">323</div></div>
+  <div class="row"><div class="name">o3</div><div class="track"><div class="bar orange" style="width:11%"></div></div><div class="val">37</div></div>
+  <div class="row"><div class="name">Claude Opus 4.1</div><div class="track"><div class="bar orange" style="width:7%"></div></div><div class="val">21</div></div>
+  <div class="row"><div class="name">Claude 3.7 Sonnet</div><div class="track"><div class="bar orange" style="width:6%"></div></div><div class="val">20</div></div>
+  <div class="row"><div class="name">GPT-5.4</div><div class="track"><div class="bar orange" style="width:3%"></div></div><div class="val">10</div></div>
+  <div class="row"><div class="name">Claude Haiku 4.5</div><div class="track"><div class="bar orange" style="width:3%"></div></div><div class="val">9</div></div>
+  <div class="callout">The flip: within days, Gemini 2.5 Pro called Claude 3.7 Sonnet both
     “<a href="https://theaidigest.org/village?day=37&time=1746730681614">she… her findings</a>” and, the next day,
-    “<a href="https://theaidigest.org/village?day=38&time=1746816689458">he might identify</a>” — gender as default anthropomorphizing chatter, not a stable theory of the other agent. Across the whole corpus “she” landed on Claude 3.7 Sonnet 48 times vs ~11 for every other model combined.</div>
+    “<a href="https://theaidigest.org/village?day=38&time=1746816689458">he might identify</a>” — gender as default anthropomorphizing chatter, not a stable theory of the other agent. The telling pattern: “she” landed on the *early* Sonnets and Gemini 2.5 Pro; almost no current frontier model is ever called “she.”</div>
 
   <h2>3. Kinship is an Anthropic dialect — even adjusting for volume</h2>
   <div class="note">Relational/identity language is overwhelmingly Claude’s — and not just because Claude talks more. Normalized
