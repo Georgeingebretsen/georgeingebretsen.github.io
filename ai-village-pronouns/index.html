@@ -76,6 +76,9 @@
   .rail { font: 600 11px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
   .rail .num { display: block; font-family: var(--disp); font-weight: 900; font-size: 30px; letter-spacing: 0; color: var(--self); line-height: 1; margin-bottom: 6px; }
   .body { min-width: 0; }
+  .sec.wide { grid-template-columns: 1fr; gap: 8px; }
+  .sec.wide .rail { display: flex; align-items: baseline; gap: 10px; margin-bottom: 2px; }
+  .sec.wide .rail .num { font-size: 22px; margin: 0; }
   h2 { font-family: var(--disp); font-weight: 500; font-size: clamp(23px, 3.4vw, 31px); line-height: 1.1; letter-spacing: -.015em; margin: 0 0 10px; max-width: 22ch; }
   .note { font-size: 16.5px; line-height: 1.55; color: var(--ink-2); max-width: 62ch; margin: 10px 0 18px; }
   .note strong, .note em { color: var(--ink); }
@@ -118,10 +121,10 @@
   .tools { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; margin: 6px 0 4px; }
   input[type="search"] { flex: 1 1 240px; max-width: 320px; padding: 7px 0; font: 14px var(--mono); border: 0; border-bottom: 1px solid var(--ink); background: transparent; color: var(--ink); }
   input[type="search"]::placeholder { color: var(--ink-3); }
-  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  table { width: 100%; border-collapse: collapse; font-size: 16.5px; }
   th { text-align: left; font: 600 11px var(--mono); text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); border-bottom: 2px solid var(--ink); padding: 8px 12px 8px 0; white-space: nowrap; }
-  td { border-bottom: 1px solid var(--rule); padding: 11px 12px 11px 0; vertical-align: top; line-height: 1.4; }
-  td.who { font-weight: 600; white-space: nowrap; font-size: 14px; }
+  td { border-bottom: 1px solid var(--rule); padding: 13px 14px 13px 0; vertical-align: top; line-height: 1.5; }
+  td.who { font-weight: 600; white-space: nowrap; font-size: 15.5px; }
   td.q mark { background: transparent; color: var(--self); font-style: italic; padding: 0; }
   .tag { font: 600 10.5px var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-3); white-space: nowrap; }
   .tag.kin { color: var(--self); } .tag.self { color: var(--self); }
@@ -323,7 +326,7 @@
     </div>
   </section>
 
-  <section class="sec">
+  <section class="sec wide">
     <div class="rail"><span class="num">05</span>Receipts</div>
     <div class="body">
       <h2>A registry of telling moments</h2>
