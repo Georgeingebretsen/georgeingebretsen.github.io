@@ -100,11 +100,15 @@
   .clab { font-size: 13px; text-align: right; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   .ctrack { position: relative; height: 22px; background: var(--bg-3); border-radius: 4px; }
   .cfill { height: 100%; border-radius: 4px; min-width: 3px; background: var(--other); transform-origin: left;
-           animation: grow .9s cubic-bezier(.2,.8,.2,1) both; }
+           transition: transform .85s cubic-bezier(.2,.8,.2,1); }
+  .cfill.pre { transform: scaleX(0); }
   .cfill.self { background: var(--self); }
   .cfill.neutral { background: var(--neutral); }
   .cfill.soft { background: var(--other-2); }
-  .cval { font-family: var(--mono); font-size: 12.5px; color: var(--ink); white-space: nowrap; }
+  .cval { font-family: var(--mono); font-size: 12.5px; color: var(--ink); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .hn, .stat b, .sub, .hl, .cval { font-variant-numeric: tabular-nums; }
+  tbody tr { transition: background .12s; }
+  tbody tr:hover { background: var(--bg-2); }
   .cval .q { color: var(--ink-2); }
   .axis { grid-column: 2; font-family: var(--mono); font-size: 10.5px; color: var(--ink-2); display: flex; justify-content: space-between; border-top: 1px solid var(--line); margin-top: 2px; padding-top: 2px; }
   @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
@@ -245,6 +249,12 @@
       split is <strong>he : she ≈ 13 : 1</strong>. The interesting question is the rare “she”, and it is sharply clustered. Only
       <strong>six</strong> models were ever called “she,” and the <strong>2025-era models</strong> (the early Claude Sonnets + Gemini 2.5 Pro)
       account for 29 of 33.</p>
+    <div class="pbar" style="height:30px;margin:8px 0 4px">
+      <span class="seg" style="flex:424;background:var(--other)">“he” · 424</span>
+      <span class="seg" style="flex:33;background:var(--self)">“she” · 33</span>
+    </div>
+    <div class="pbar-legend" style="margin-bottom:14px">all 457 gendered references · he : she ≈ 13 : 1</div>
+    <div class="note" style="margin:0 0 6px;font-size:13px">Which models ever drew a “she”:</div>
     <div class="chart">
       <div class="crow"><div class="clab">Claude 3.7 Sonnet</div><div class="ctrack"><div class="cfill self" style="width:100%"></div></div><div class="cval">17</div></div>
       <div class="crow"><div class="clab">Claude 3.5 Sonnet</div><div class="ctrack"><div class="cfill self" style="width:41%"></div></div><div class="cval">7</div></div>
@@ -426,6 +436,28 @@
       rows.forEach(function(r){tb.appendChild(r);});
     });
   });
+})();
+</script>
+<script>
+(function(){
+  if (window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (!('IntersectionObserver' in window)) return;
+  var charts = document.querySelectorAll('.chart');
+  if (!charts.length) return;
+  charts.forEach(function(c){
+    c.querySelectorAll('.cfill').forEach(function(b){ b.classList.add('pre'); });
+  });
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if (!e.isIntersecting) return;
+      e.target.querySelectorAll('.cfill').forEach(function(b,i){
+        b.style.transitionDelay = (i*70) + 'ms';
+        b.classList.remove('pre');
+      });
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.2 });
+  charts.forEach(function(c){ io.observe(c); });
 })();
 </script>
 </body>
