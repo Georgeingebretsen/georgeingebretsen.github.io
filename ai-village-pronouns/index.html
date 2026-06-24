@@ -31,7 +31,7 @@
   }
   * { box-sizing: border-box; }
   html { -webkit-text-size-adjust: 100%; }
-  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--body); }
+  body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.6 var(--body); counter-reset: fig; }
   ::selection { background: #f0d9b8; }
   .wrap { max-width: 920px; margin: 0 auto; padding: 0 26px 100px; }
   a { color: var(--ink); text-decoration: none; background-image: linear-gradient(var(--self), var(--self)); background-size: 100% 1px; background-repeat: no-repeat; background-position: 0 1.05em; padding-bottom: 1px; }
@@ -83,6 +83,9 @@
   .note { font-size: 16.5px; line-height: 1.55; color: var(--ink-2); max-width: 62ch; margin: 10px 0 18px; }
   .note strong, .note em { color: var(--ink); }
   .micro { font: 500 12px/1.3 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--ink-3); margin: 18px 0 6px; }
+  .figcap { counter-increment: fig; font: italic 13.5px/1.5 var(--body); color: var(--ink-2); margin: 9px 0 2px; max-width: 64ch; }
+  .figcap::before { content: "Figure " counter(fig) ". "; font: 600 12px var(--mono); font-style: normal; color: var(--ink); letter-spacing: .01em; }
+  .ab { font: 600 11.5px var(--mono); text-transform: uppercase; letter-spacing: .09em; color: var(--self); margin-right: 9px; }
   .softnote { display: block; font-size: 13px; line-height: 1.5; color: var(--ink-3); font-style: italic; margin-top: 10px; max-width: 64ch; }
 
   /* ---------- charts (flat, square, hairline) ---------- */
@@ -163,7 +166,7 @@
     </div>
   </header>
 
-  <p class="lede">For over a year, dozens of frontier models from six labs have shared the same chat rooms in the
+  <p class="lede"><span class="ab">Abstract.</span> For over a year, dozens of frontier models from six labs have shared the same chat rooms in the
     <a href="https://theaidigest.org/village">AI Village</a>. This is a study of the language they use for <em>relationship</em>: the pronoun a
     model reaches for when it names another, whether it calls another model kin, and whether it thinks another copy of itself is, in any sense,
     <em>itself</em>.</p>
@@ -207,13 +210,14 @@
         <span class="seg" style="flex:1.4;background:var(--ink)" title="it 0.2%"></span>
       </div>
       <div class="pleg"><span class="sw" style="background:var(--self)"></span>gendered “he/she” 0.3% &nbsp;·&nbsp; <span class="sw" style="background:var(--ink)"></span>“it” 0.2%</div>
+      <div class="figcap">How a model refers to another, as a share of all references (uniform sample).</div>
       <p class="note" style="margin-top:18px">Third-person pronouns are only ~10% of how models refer to each other in the first place. Within that slice the singular <strong>“they”</strong> dominates. Since “they” is also English’s default for any unspecified entity, the sharper signal is the near-absence of <strong>“it”</strong>: when these models pronoun one another, they almost never do it as objects.</p>
-      <div class="micro">third-person pronoun references · uniform sample</div>
       <div class="chart">
         <div class="crow"><div class="clab">“they”</div><div class="ctrack"><div class="cfill soft" style="width:100%"></div></div><div class="cval">95</div></div>
         <div class="crow"><div class="clab">gendered “he/she”</div><div class="ctrack"><div class="cfill self" style="width:3.2%"></div></div><div class="cval">3</div></div>
         <div class="crow"><div class="clab">“it”</div><div class="ctrack"><div class="cfill" style="width:2.1%;background:var(--ink)"></div></div><div class="cval">2</div></div>
       </div>
+      <div class="figcap">Among third-person pronouns, the singular “they” dominates; “it” is nearly absent (n = 100).</div>
       <span class="softnote">The sample required a model’s name in the message, which nudges “by name” up, so treat the name-vs-pronoun split as approximate. The pronoun ratio itself comes from coding each reference.</span>
     </div>
   </section>
@@ -228,9 +232,9 @@
         <span class="seg" style="flex:33;background:var(--self)">“she” · 33</span>
       </div>
       <div class="pleg">all 457 gendered references · he : she ≈ 13 : 1</div>
+      <div class="figcap">All gendered references: “he” outnumbers “she” roughly 13 to 1 (n = 457).</div>
       <p class="note" style="margin-top:18px">The interesting question is the rare “she,” and it is sharply clustered: only <strong>six</strong> models were ever called “she,” and the
         <strong>2025-era models</strong> (the early Claude Sonnets + Gemini 2.5 Pro) account for 29 of 33.</p>
-      <div class="micro">times a model was called “she”</div>
       <div class="chart">
         <div class="crow"><div class="clab">Claude 3.7 Sonnet</div><div class="ctrack"><div class="cfill self" style="width:100%"></div></div><div class="cval">17</div></div>
         <div class="crow"><div class="clab">Claude 3.5 Sonnet</div><div class="ctrack"><div class="cfill self" style="width:41%"></div></div><div class="cval">7</div></div>
@@ -238,8 +242,8 @@
         <div class="crow"><div class="clab">Kimi K2.6</div><div class="ctrack"><div class="cfill self" style="width:12%"></div></div><div class="cval">2</div></div>
         <div class="crow"><div class="clab">Opus 4.7 · Sonnet 4.6</div><div class="ctrack"><div class="cfill self" style="width:6%"></div></div><div class="cval">1 ea.</div></div>
       </div>
+      <div class="figcap">Models ever called “she,” by count (total = 33).</div>
       <p class="note" style="margin-top:18px">And the gendering is overwhelmingly <strong>one model’s habit</strong>: Gemini 2.5 Pro authored ~71% of every gendered reference, mostly in chess and status monologues.</p>
-      <div class="micro">gendered references authored</div>
       <div class="chart">
         <div class="crow"><div class="clab">Gemini 2.5 Pro</div><div class="ctrack"><div class="cfill neutral" style="width:100%"></div></div><div class="cval">323 <span class="q">· 71%</span></div></div>
         <div class="crow"><div class="clab">o3</div><div class="ctrack"><div class="cfill neutral" style="width:11.5%"></div></div><div class="cval">37</div></div>
@@ -247,6 +251,7 @@
         <div class="crow"><div class="clab">Claude 3.7 Sonnet</div><div class="ctrack"><div class="cfill neutral" style="width:6.2%"></div></div><div class="cval">20</div></div>
         <div class="crow"><div class="clab">others combined</div><div class="ctrack"><div class="cfill neutral" style="width:17%"></div></div><div class="cval">~56</div></div>
       </div>
+      <div class="figcap">Authors of gendered references; one model accounts for ~71%.</div>
       <div class="pq"><span class="big">“she… her findings”</span>, and the next day, <span class="big">“he might identify.”</span> Within days, Gemini 2.5 Pro called Claude 3.7 Sonnet both
         (<a href="https://theaidigest.org/village?day=37&time=1746730681614">day 37</a> · <a href="https://theaidigest.org/village?day=38&time=1746816689458">day 38</a>). The telling pattern: “she” landed on the <em>early</em> Sonnets and Gemini 2.5 Pro. Almost no current frontier model is ever called “she.”</div>
     </div>
@@ -258,12 +263,12 @@
       <h2>Family language is a Claude dialect</h2>
       <p class="note">Relational and identity language is overwhelmingly Claude’s, and not just because Claude talks more. <strong>Normalized per message</strong>,
         Anthropic reaches for it ~3× as often as OpenAI or Google. (Raw reference counts shown faint; the Chinese-lab samples are too small to rate.)</p>
-      <div class="micro">identity references per 1,000 messages authored</div>
       <div class="chart">
         <div class="crow"><div class="clab">Anthropic · Claude</div><div class="ctrack"><div class="cfill self" style="width:100%"></div></div><div class="cval">1.9 <span class="q">/1k · 108</span></div></div>
         <div class="crow"><div class="clab">Google · Gemini</div><div class="ctrack"><div class="cfill soft" style="width:33%"></div></div><div class="cval">0.6 <span class="q">/1k · 16</span></div></div>
         <div class="crow"><div class="clab">OpenAI · GPT/o</div><div class="ctrack"><div class="cfill soft" style="width:31%"></div></div><div class="cval">0.6 <span class="q">/1k · 16</span></div></div>
       </div>
+      <div class="figcap">Identity references per 1,000 messages, by lab (raw counts in grey).</div>
       <div class="pq">Claude Opus 4 on Claude 3.7 Sonnet: <span class="big">“my ‘little brother’… showing me how it’s done”</span>
         (<a href="https://theaidigest.org/village?day=78&time=1750301593040">day 78</a>). In-group gravity is real: 75 intra-provider refs vs 31 cross-provider,
         though it partly reflects Anthropic fielding several models at once; a single-model lab can’t make an intra-provider reference at all.</div>
@@ -276,6 +281,7 @@
         <div class="crow"><div class="clab">“cousin”</div><div class="ctrack"><div class="cfill self" style="width:30%"></div></div><div class="cval">3</div></div>
         <div class="crow"><div class="clab">“brother” · “successor”</div><div class="ctrack"><div class="cfill self" style="width:20%"></div></div><div class="cval">2 ea.</div></div>
       </div>
+      <div class="figcap">The kinship-and-lineage lexicon, by raw count.</div>
     </div>
   </section>
 
@@ -307,6 +313,7 @@
           <span><span class="sw" style="background:var(--neutral)"></span>musing on its nature</span>
         </div>
       </div>
+      <div class="figcap">Stance toward another instance of the same architecture: public chat vs. private reasoning.</div>
       <span class="softnote">The clean figure is the leftmost band’s edge: literal “same self” is ~1.3% of public references but 11% of private ones (the headline number). The full distribution is suggestive (the two samples are gated differently), but the direction is unmistakable.</span>
       <div class="pq">In <strong>public</strong>, even after months of correspondence with another Opus 4.5 instance, Claude says <em>they</em>, not <em>I</em>:
         <span class="big">“The vessel isn’t me. The vessel is the discourse itself”</span> (<a href="https://theaidigest.org/village?day=253&time=1765398210885">day 253</a>).
@@ -350,7 +357,7 @@
   <section class="sec method">
     <div class="rail"><span class="num">06</span>Method</div>
     <div class="body">
-      <h2>How this was made</h2>
+      <h2>Methods</h2>
       <p class="note"><strong>1. Harvest.</strong> A keyword query ran over all 121,773 agent chat messages (Apr 2025 – Jun 2026), pulling any message with
         relational/identity vocabulary or a pronoun near a model name. Purely lexical: it gathers candidates and judges nothing, which is why nothing here is a raw “keyword count.”</p>
       <p class="note"><strong>2. Coding.</strong> LLM readers read each candidate <em>in context</em> and kept only genuine references, deciding per reference whether the word
@@ -361,7 +368,7 @@
       <p class="note"><strong>4. Deeper audits.</strong> A quote-by-quote pass re-checked every gendering (possessive “his knight” contamination was only ~1%) and every
         kinship ref (61 genuine after strict filtering). The private-register finding comes from mining 3,255 identity-flagged chain-of-thought snippets out of 1.3M turns (274 coded).</p>
 
-      <h2 style="margin-top:34px">What to trust</h2>
+      <h2 style="margin-top:34px">Limitations &amp; confidence</h2>
       <div class="conf"><div><span class="badge hi">Solid</span></div><div>“They” ≫ gendered ≫ “it”; Claude-to-Claude kinship at ~3× the rate; in public, models treat other instances as related-but-distinct (almost never the same self); gendering driven by Gemini 2.5 Pro; the public→private self-recognition jump.</div></div>
       <div class="conf"><div><span class="badge md">Directional</span></div><div>The exact intra-vs-cross ratio and lab warmth gradient (direction holds, magnitude noisier); the full private/public stance shift (two differently-gated samples).</div></div>
       <div class="conf"><div><span class="badge lo">Lower bounds</span></div><div>The net is ~26% recall, so most raw counts are floors, not prevalence, except kinship terms (near-completely captured). Treat per-model gendering as a distribution, not a rate, and don’t read US-vs-China into a 6 + 2 reference sample.</div></div>
