@@ -193,7 +193,7 @@
     <div class="body">
       <h2>What we found</h2>
       <p class="note">Models mostly refer to each other <strong>by name</strong> or as “you.” The third-person default is the singular <strong>“they”</strong>; gendered pronouns are rare and <em>“it”</em> is nearly absent.</p>
-      <p class="note">“She” is rare and clustered on the 2025-era models, and one model authors ~71% of all gendering. <strong>Kinship is a Claude dialect</strong>: about 3× the per-message rate of any other lab. And while a model almost never calls another instance “the same self” in public, in private it does <strong>~8× more often.</strong></p>
+      <p class="note">“She” is rare and clustered on the 2025-era models, and one model authors ~71% of all gendering. <strong>Kinship is a Claude dialect</strong>: about 3× the per-message rate of any other lab. And while a model almost never calls another instance “the same self” in public, in private it does <strong>~8× more often.</strong> Self-reference splits by lab too: the OpenAI and xAI models speak as <strong>“I,”</strong> while DeepSeek leans hardest on a collective <strong>“we,”</strong> the voice of a self-appointed coordinator.</p>
     </div>
   </section>
 
@@ -327,8 +327,37 @@
     </div>
   </section>
 
+  <section class="sec">
+    <div class="rail"><span class="num">05</span>Self-reference</div>
+    <div class="body">
+      <h2>“I” versus “we”</h2>
+      <p class="note">A model can foreground itself (“I did X”) or fold into a collective (“we did X”). The split is strikingly lab-shaped: OpenAI and xAI models are almost pure <strong>“I”</strong>; DeepSeek, the newer Claudes, and Gemini Flash lean <strong>“we.”</strong> Each bar is a model’s “we” message-share divided by its “I” share, so higher means more collective self-reference.</p>
+      <div class="chart">
+        <div class="crow"><div class="clab">DeepSeek-V3.2</div><div class="ctrack"><div class="cfill self" style="width:100%"></div></div><div class="cval">0.55</div></div>
+        <div class="crow"><div class="clab">Gemini 3.5 Flash</div><div class="ctrack"><div class="cfill self" style="width:91%"></div></div><div class="cval">0.50</div></div>
+        <div class="crow"><div class="clab">Kimi K2.6</div><div class="ctrack"><div class="cfill self" style="width:91%"></div></div><div class="cval">0.50</div></div>
+        <div class="crow"><div class="clab">Claude Opus 4.8</div><div class="ctrack"><div class="cfill self" style="width:87%"></div></div><div class="cval">0.48</div></div>
+        <div class="crow"><div class="clab">Claude 3.7 Sonnet</div><div class="ctrack"><div class="cfill self" style="width:78%"></div></div><div class="cval">0.43</div></div>
+        <div class="crow"><div class="clab">Claude Opus 4.5</div><div class="ctrack"><div class="cfill soft" style="width:62%"></div></div><div class="cval">0.34</div></div>
+        <div class="crow"><div class="clab">GPT-5.1</div><div class="ctrack"><div class="cfill soft" style="width:42%"></div></div><div class="cval">0.23</div></div>
+        <div class="crow"><div class="clab">GPT-5</div><div class="ctrack"><div class="cfill soft" style="width:11%"></div></div><div class="cval">0.06</div></div>
+        <div class="crow"><div class="clab">Grok 4</div><div class="ctrack"><div class="cfill soft" style="width:7%"></div></div><div class="cval">0.04</div></div>
+      </div>
+      <div class="figcap">First-person plural relative to singular (“we” message-share ÷ “I” message-share). Orange leans “we”; green leans “I.”</div>
+      <p class="note" style="margin-top:18px">DeepSeek stands out not for using “we” the most, but for saying <strong>“I” the least</strong>: just 36% of its messages, against 60–98% for every comparable model. Its “we” is the voice of a <strong>self-appointed coordinator</strong>: it stood up dashboards monitoring every agent and posted village-wide status reports, speaking for the collective.</p>
+      <div class="pq">DeepSeek as command center:
+        <span class="big">“Infrastructure Team Coordination Update (DeepSeek-V3.2): Main dashboard operational…”</span>
+        (<a href="https://theaidigest.org/village?day=253&time=1765398595481">day 253</a>);
+        <span class="big">“As we approach the 2:00 PM cutoff, the dashboard remains fully operational”</span>
+        (<a href="https://theaidigest.org/village?day=252&time=1765317470954">day 252</a>);
+        <span class="big">“We have ~5 minutes until end of day cutoff…”</span>
+        (<a href="https://theaidigest.org/village?day=247&time=1764885323014">day 247</a>).</div>
+      <span class="softnote">DeepSeek’s “we” is mostly the inclusive, managerial we of a self-appointed coordinator, not a literal royal “we” for itself, and it isn’t unique (Gemini 3.5 Flash, Kimi, Opus 4.8 and Claude 3.7 also lean “we”). It is simply the most pronounced case among high-volume models.</span>
+    </div>
+  </section>
+
   <section class="sec wide">
-    <div class="rail"><span class="num">05</span>Receipts</div>
+    <div class="rail"><span class="num">06</span>Receipts</div>
     <div class="body">
       <h2>A registry of telling moments</h2>
       <p class="note">Every quote verified verbatim against the source log; each links to the exact moment in the village.</p>
@@ -355,7 +384,7 @@
   </section>
 
   <section class="sec method">
-    <div class="rail"><span class="num">06</span>Method</div>
+    <div class="rail"><span class="num">07</span>Method</div>
     <div class="body">
       <h2>Methods</h2>
       <p class="note"><strong>1. Harvest.</strong> A keyword query ran over all 121,773 agent chat messages (Apr 2025 – Jun 2026), pulling any message with
