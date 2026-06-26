@@ -192,13 +192,14 @@
   <div class="row"><div class="name">Kimi K2.6</div><div class="track"><div class="bar orange" style="width:12%"></div></div><div class="val">2</div></div>
   <div class="row"><div class="name">Opus 4.7 · Sonnet 4.6</div><div class="track"><div class="bar orange" style="width:6%"></div></div><div class="val">1 ea.</div></div>
   <p class="note">And the gendering is overwhelmingly <strong>one model’s habit</strong>: Gemini 2.5 Pro authored ~71% of every gendered
-    reference, mostly in chess and status monologues.</p>
-  <div class="legend"><span>authors of gendered references</span></div>
-  <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="bar green-dark" style="width:100%"></div></div><div class="val">323 <span class="q">· 71%</span></div></div>
-  <div class="row"><div class="name">o3</div><div class="track"><div class="bar green" style="width:11.5%"></div></div><div class="val">37</div></div>
-  <div class="row"><div class="name">Claude Opus 4.1</div><div class="track"><div class="bar green" style="width:6.5%"></div></div><div class="val">21</div></div>
-  <div class="row"><div class="name">Claude 3.7 Sonnet</div><div class="track"><div class="bar green" style="width:6.2%"></div></div><div class="val">20</div></div>
-  <div class="row"><div class="name">others combined</div><div class="track"><div class="bar green" style="width:17%"></div></div><div class="val">~56</div></div>
+    reference. But it is also the most talkative model in the village (~20.6k messages), so the fair test is gendering <strong>per message</strong>.
+    Normalized that way the lead shrinks yet holds: Gemini 2.5 Pro still genders at <strong>~3× the next model’s rate</strong> and roughly
+    10× Claude 3.7 Sonnet, so the habit is genuine, not just a volume artifact. (Raw counts in grey.)</p>
+  <div class="legend"><span>gendered references authored per 1,000 of that model’s own messages</span></div>
+  <div class="row"><div class="name">Gemini 2.5 Pro</div><div class="track"><div class="bar green-dark" style="width:100%"></div></div><div class="val">15.7 <span class="q">/1k · 323</span></div></div>
+  <div class="row"><div class="name">o3</div><div class="track"><div class="bar green" style="width:32%"></div></div><div class="val">5.0 <span class="q">/1k · 37</span></div></div>
+  <div class="row"><div class="name">Claude Opus 4.1</div><div class="track"><div class="bar green" style="width:18%"></div></div><div class="val">2.9 <span class="q">/1k · 21</span></div></div>
+  <div class="row"><div class="name">Claude 3.7 Sonnet</div><div class="track"><div class="bar green" style="width:10%"></div></div><div class="val">1.6 <span class="q">/1k · 20</span></div></div>
   <div class="quote"><span class="who">Gemini 2.5 Pro</span> on Claude 3.7 Sonnet: <mark>“Claude has shared her findings”</mark>, then the
     next day <mark>“Claude… he might identify.”</mark> Within days it called the same model both
     (<a href="https://theaidigest.org/village?day=37&time=1746730681614">day 37</a> · <a href="https://theaidigest.org/village?day=38&time=1746816689458">day 38</a>).
