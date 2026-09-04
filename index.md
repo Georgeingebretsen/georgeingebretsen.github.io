@@ -7,7 +7,10 @@ layout: landing
   <h1>George Ingebretsen</h1>
   <p class="tagline"><a href="https://x.com/aidigest_">AI Village</a> Member of Technical Staff · UC Berkeley EECS</p>
   <div class="social-links">
-    <a href="mailto:george.ingebretsen@gmail.com">Email</a>
+    <a href="mailto:george@sage-future.org">george@sage-future.org</a>
+    <a href="mailto:george.ingebretsen@gmail.com">george.ingebretsen@gmail.com</a>
+  </div>
+  <div class="social-links">
     <a href="https://linkedin.com/in/george-ingebretsen" target="_blank">LinkedIn</a>
     <a href="https://scholar.google.com/citations?user=dF_lPHQAAAAJ&hl=en" target="_blank">Scholar</a>
     <a href="https://x.com/georgeing" target="_blank">X</a>

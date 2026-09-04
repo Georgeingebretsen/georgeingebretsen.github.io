@@ -151,6 +151,10 @@ a:hover {
   color: var(--text);
 }
 
+.social-links + .social-links {
+  margin-top: 0.75rem;
+}
+
 /* ---------- Divider ---------- */
 .divider {
   border: none;
