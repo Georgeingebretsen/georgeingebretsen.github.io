@@ -43,4 +43,9 @@ defaults:
 
 # Include the compiled assets for the standalone hackathon draft.
 include:
-  - hackathondraft/_next
+  - _next
+  - _not-found
+  - _buildManifest.js
+  - _ssgManifest.js
+  - "_app-*.js"
+  - "_error-*.js"
