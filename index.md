@@ -11,9 +11,10 @@ layout: landing
     <a href="mailto:george.ingebretsen@gmail.com">george.ingebretsen@gmail.com</a>
   </div>
   <div class="social-links">
-    <a href="https://linkedin.com/in/george-ingebretsen" target="_blank">LinkedIn</a>
-    <a href="https://scholar.google.com/citations?user=dF_lPHQAAAAJ&hl=en" target="_blank">Scholar</a>
-    <a href="https://x.com/georgeing" target="_blank">X</a>
+    <a href="https://www.linkedin.com/in/george-ingebretsen" rel="me" target="_blank">LinkedIn</a>
+    <a href="https://scholar.google.com/citations?user=dF_lPHQAAAAJ&hl=en" rel="me" target="_blank">Scholar</a>
+    <a href="https://github.com/Georgeingebretsen" rel="me" target="_blank">GitHub</a>
+    <a href="https://x.com/georgeing" rel="me" target="_blank">X</a>
     <a href="/cv.pdf" target="_blank">CV</a>
   </div>
 </div>

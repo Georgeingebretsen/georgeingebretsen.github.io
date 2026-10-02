@@ -5,7 +5,73 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.title | default: "George Ingebretsen" }}</title>
-  <meta name="description" content="George Ingebretsen">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="George Ingebretsen">
+  <link rel="canonical" href="https://georgeing.me/">
+
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="George Ingebretsen">
+  <meta property="og:title" content="George Ingebretsen">
+  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:url" content="https://georgeing.me/">
+  <meta property="og:image" content="https://georgeing.me/me.jpeg">
+  <meta property="og:image:alt" content="Portrait of George Ingebretsen">
+  <meta property="profile:first_name" content="George">
+  <meta property="profile:last_name" content="Ingebretsen">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  <meta name="twitter:title" content="George Ingebretsen">
+  <meta name="twitter:description" content="{{ site.description }}">
+  <meta name="twitter:image" content="https://georgeing.me/me.jpeg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": "https://georgeing.me/#profilepage",
+    "url": "https://georgeing.me/",
+    "name": "George Ingebretsen",
+    "dateModified": "{{ site.time | date: '%Y-%m-%d' }}",
+    "mainEntity": {
+      "@type": "Person",
+      "@id": "https://georgeing.me/#person",
+      "name": "George Ingebretsen",
+      "givenName": "George",
+      "familyName": "Ingebretsen",
+      "url": "https://georgeing.me/",
+      "image": "https://georgeing.me/me.jpeg",
+      "description": "{{ site.description }}",
+      "jobTitle": "Member of Technical Staff",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "AI Village",
+        "url": "https://theaidigest.org/village",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Sage",
+          "url": "https://sage-future.org/"
+        }
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "University of California, Berkeley",
+        "url": "https://www.berkeley.edu/",
+        "sameAs": "https://www.wikidata.org/wiki/Q168756"
+      },
+      "email": "mailto:george@sage-future.org",
+      "knowsAbout": ["AI safety", "AI evaluations", "multi-agent systems", "AI character"],
+      "sameAs": [
+        "https://www.linkedin.com/in/george-ingebretsen",
+        "https://x.com/georgeing",
+        "https://github.com/Georgeingebretsen",
+        "https://scholar.google.com/citations?user=dF_lPHQAAAAJ",
+        "https://orcid.org/0009-0000-6703-1619",
+        "https://www.semanticscholar.org/author/2319406641"
+      ]
+    }
+  }
+  </script>
   <link rel="stylesheet" href="{{ '/css/landing.css' | relative_url }}">
   <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title }}">
 </head>
