@@ -23,7 +23,7 @@ layout: landing
 
 <div class="bio">
   <p>I'm George Ingebretsen. At <a href="https://x.com/aidigest_" target="_blank">AI Village</a>, I'm a member of technical staff studying AI character, multi-agent dynamics, and real-world AI evaluations.</p>
-  <p>Previously, I worked on special projects at <a href="https://www.safe.ai/" target="_blank">CAIS</a> and supporting our director, Dan Hendrycks as executive assistant.</p>
+  <p>Previously, I worked on special projects at <a href="https://www.safe.ai/" target="_blank">CAIS</a> and supported our director, Dan Hendrycks as executive assistant.</p>
   <p>I'm a former <a href="https://humancompatible.ai/" target="_blank">CHAI</a> intern and have been mentored by researchers at OpenAI, Google DeepMind, Apollo Research, and Far AI. I hold a B.S. in EECS from UC Berkeley.</p>
 </div>
 
